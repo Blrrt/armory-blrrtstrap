@@ -1,0 +1,13 @@
+@keyframes record
+  0%, 50%, 100% {color: darken(red, 40%);}
+  25%, 75% {color: red;}
+
+.control-record-active
+  animation record 3s infinite
+
+.control-record-active:hover
+  animation none
+  color darken(red, 30%)
+
+.control-record-active:active
+  animation record 3s infinite

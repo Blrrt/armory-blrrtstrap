@@ -1,0 +1,65 @@
+.soundwave
+  display block
+  height 14px
+  margin-bottom 2px
+  position relative
+
+.soundwave:hover
+  cursor pointer
+
+.soundwave-recording:hover
+  cursor default
+
+.soundwave-track,
+.soundwave-previous,
+.soundwave-current
+  background url(/img/soundwave.png)
+
+.soundwave-bar-track,
+.soundwave-bar-previous,
+.soundwave-bar-current,
+.soundwave-cursor
+  bottom 0
+  position absolute
+  top 0
+
+.soundwave-bar-track,
+.soundwave-bar-previous,
+.soundwave-bar-current
+  background url(/img/soundwave.png)
+  left 0
+
+.soundwave-bar-track
+  -webkit-filter grayscale(1)
+  right 0
+
+.soundwave-bar-previous
+  -webkit-filter brightness(-.2)
+
+.soundwave-playing > .soundwave-bar-current
+  -webkit-filter hue-rotate(160deg)
+
+.soundwave:hover > .soundwave-bar-track
+  -webkit-filter brightness(-.1) grayscale(1)
+
+.soundwave:hover > .soundwave-bar-previous
+  -webkit-filter brightness(-.3)
+
+.soundwave:hover > .soundwave-bar-current
+  -webkit-filter brightness(-.1)
+
+.soundwave-playing:hover > .soundwave-bar-current
+  -webkit-filter brightness(-.1) hue-rotate(160deg)
+
+.soundwave-recording > .soundwave-bar-current,
+.soundwave-recording:hover > .soundwave-bar-current
+  -webkit-filter brightness(-.3) grayscale(1)
+
+.soundwave-cursor:after
+  background rgba(0, 0, 0, .4)
+  content ''
+  display block
+  height 100%
+  right .4em
+  position relative
+  width .8em

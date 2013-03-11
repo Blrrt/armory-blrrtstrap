@@ -1,0 +1,35 @@
+.lightbox-background,
+.lightbox-window-container
+  position fixed
+
+.lightbox-background
+  background rgba(0, 0, 0, .8)
+  bottom 0
+  left 0
+  right 0
+  top 0
+
+.lightbox-window-container
+  background #fff
+  bottom 25%
+  box-shadow rgba(255, 255, 255, .4) 0px .3em .7em 0
+  left 25%
+  padding 1%
+  right 25%
+  top 25%
+
+@media (max-width 960px)
+  .lightbox-window-container
+    bottom 2%
+    left 2%
+    right 2%
+    top 2%
+
+.lightbox-window-option
+  position absolute
+  right 1em
+  top 1em
+
+.lightbox-window-option-target
+  color $font-color-dark
+  text-decoration none

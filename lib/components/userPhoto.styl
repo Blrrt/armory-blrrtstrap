@@ -1,0 +1,27 @@
+.user-photo
+  height rhythmLength(3)
+  width rhythmLength(3)
+
+.user-photo-size-small
+  height rhythmLength(2)
+  width rhythmLength(2)
+
+.user-photo-size-large
+  height rhythmLength(4)
+  width rhythmLength(4)
+
+.user-photo-empty
+  background $font-color-light
+  color #fff
+  font-weight bold
+  line-height rhythmLength(3)
+  text-align center
+
+.user-photo-empty.user-photo-size-small
+  line-height rhythmLength(2)
+
+.user-photo-empty.user-photo-size-large
+  line-height rhythmLength(4)
+
+.user-photo-empty:before
+  content 'U_u'

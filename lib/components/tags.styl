@@ -1,0 +1,55 @@
+.tag-items,
+.tag-item,
+.tag
+  display inline-block
+
+.tag-items
+  list-style none
+  margin 0 0 0 -.5em
+  min-width .5em
+  padding 0
+
+.tag-item
+  margin-left .5em
+
+.tag
+  background $font-color-light
+  box-shadow 1px 1px 0 #fff
+  color #fff
+  font-weight normal
+  margin-left .7em
+  padding 0 .6em 0 .9em
+  position relative
+  text-decoration none
+
+  &:after,
+  &:before
+    content ''
+    float left
+    position absolute
+
+  &:before
+    border-color transparent $font-color-light transparent transparent
+    border-style solid
+    border-width .7em .7em .7em 0  
+    height 0
+    left -.68em
+    top 0
+    width 0
+  
+  &:after
+    background #fff
+    border-radius .3em
+    box-shadow -1px -1px 2px darken($font-color-light, 30)
+    height .3em
+    left .15em
+    top .5em
+    width @height
+
+  &:hover
+    background darken($font-color-light, 20)
+    &:before
+      border-right-color darken($font-color-light, 20)
+    
+    &:after
+      box-shadow -1px -1px 2px darken($font-color-light, 60)

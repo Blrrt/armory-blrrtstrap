@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "armory": "*"
+  },
+  "name": "armory-blrrtstrap",
+  "version": "0.0.0",
+  "main": "index.styl",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}

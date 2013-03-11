@@ -1,0 +1,22 @@
+.control
+  color $font-color-light
+  text-decoration none
+  text-shadow 1px 1px 0 #fff
+
+  &:hover
+    color darken($font-color-light, 20%)
+  
+  &.control-disabled
+    color rgba(@color, .2)
+  
+.control-inverse
+  color $font-color-dark
+
+  &:hover
+    color lighten($font-color-dark, 20%)
+  
+  &.control-disabled
+    color rgba(@color, .2)
+  
+.control-disabled
+  cursor default
