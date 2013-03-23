@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "armory": "*",
+    "armory-blrrtstrap-logo": "*",
     "armory-blrrtstrap-textbox": "*"
   },
   "name": "armory-blrrtstrap",
