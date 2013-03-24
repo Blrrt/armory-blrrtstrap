@@ -2,6 +2,7 @@
   "dependencies": {
     "armory": "*",
     "armory-blrrtstrap-button": "*",
+    "armory-blrrtstrap-heading": "*",
     "armory-blrrtstrap-link": "*",
     "armory-blrrtstrap-link-list": "*",
     "armory-blrrtstrap-logo": "*",
