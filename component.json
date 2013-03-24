@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "armory": "*",
+    "armory-blrrtstrap-button": "*",
     "armory-blrrtstrap-link": "*",
     "armory-blrrtstrap-logo": "*",
     "armory-blrrtstrap-text": "*",
