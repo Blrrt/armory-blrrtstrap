@@ -10,7 +10,8 @@
     "armory-blrrtstrap-paragraph": "*",
     "armory-blrrtstrap-subheading": "*",
     "armory-blrrtstrap-text": "*",
-    "armory-blrrtstrap-textbox": "*"
+    "armory-blrrtstrap-textbox": "*",
+    "armory-blrrtstrap-userphoto": "*"
   },
   "name": "armory-blrrtstrap",
   "version": "0.0.0",
