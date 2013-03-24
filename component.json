@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "armory": "*",
+    "armory-blrrtstrap-blrrt": "*",
     "armory-blrrtstrap-button": "*",
     "armory-blrrtstrap-heading": "*",
     "armory-blrrtstrap-link": "*",
@@ -10,6 +11,7 @@
     "armory-blrrtstrap-object-list": "*",
     "armory-blrrtstrap-paragraph": "*",
     "armory-blrrtstrap-scrollable-window": "*",
+    "armory-blrrtstrap-stream": "*",
     "armory-blrrtstrap-subheading": "*",
     "armory-blrrtstrap-text": "*",
     "armory-blrrtstrap-textbox": "*",
