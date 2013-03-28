@@ -2,6 +2,7 @@
   "dependencies": {
     "armory-blrrtstrap-blrrt": "*",
     "armory-blrrtstrap-button": "*",
+    "armory-blrrtstrap-checkbox": "*",
     "armory-blrrtstrap-dropout-menu": "*",
     "armory-blrrtstrap-form": "*",
     "armory-blrrtstrap-form-fieldset": "*",
