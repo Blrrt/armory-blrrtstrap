@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "annihilate.css": "*",
+    "armory-blrrtstrap-animate": "*",
     "armory-blrrtstrap-blrrt": "*",
     "armory-blrrtstrap-button": "*",
     "armory-blrrtstrap-checkbox": "*",
