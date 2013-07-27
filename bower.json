@@ -28,6 +28,7 @@
     "armory-blrrtstrap-navigation-menu": "*",
     "armory-blrrtstrap-paragraph": "*",
     "armory-blrrtstrap-post": "*",
+    "armory-blrrtstrap-qtip": "*",
     "armory-blrrtstrap-scrollable-window": "*",
     "armory-blrrtstrap-select2": "*",
     "armory-blrrtstrap-slider": "*",
@@ -40,7 +41,6 @@
     "armory-blrrtstrap-text-button": "*",
     "armory-blrrtstrap-textbox": "*",
     "armory-blrrtstrap-tgd": "*",
-    "armory-blrrtstrap-tipsy": "*",
     "armory-blrrtstrap-userphoto": "*"
   },
   "name": "armory-blrrtstrap",
