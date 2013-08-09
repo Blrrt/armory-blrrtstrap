@@ -33,6 +33,7 @@
     "armory-blrrtstrap-scrollable-window": "*",
     "armory-blrrtstrap-select2": "*",
     "armory-blrrtstrap-slider": "*",
+    "armory-blrrtstrap-sm2": "*",
     "armory-blrrtstrap-soundwave": "*",
     "armory-blrrtstrap-space": "*",
     "armory-blrrtstrap-stack": "*",
@@ -43,7 +44,8 @@
     "armory-blrrtstrap-text-button": "*",
     "armory-blrrtstrap-textbox": "*",
     "armory-blrrtstrap-tgd": "*",
-    "armory-blrrtstrap-userphoto": "*"
+    "armory-blrrtstrap-userphoto": "*",
+    "armory-blrrtstrap-wami": "*"
   },
   "name": "armory-blrrtstrap",
   "version": "0.0.0",
