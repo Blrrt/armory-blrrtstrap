@@ -2,6 +2,7 @@
   "dependencies": {
     "armory-blrrtstrap-alert": "*",
     "armory-blrrtstrap-animate": "*",
+    "armory-blrrtstrap-area": "*",
     "armory-blrrtstrap-armor-badge": "*",
     "armory-blrrtstrap-armor-logo": "*",
     "armory-blrrtstrap-base": "*",
