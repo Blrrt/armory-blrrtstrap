@@ -13,7 +13,6 @@
     "armory-blrrtstrap-form": "0.1.x",
     "armory-blrrtstrap-form-label": "0.1.x",
     "armory-blrrtstrap-heading": "0.1.x",
-    "armory-blrrtstrap-icon": "0.1.x",
     "armory-blrrtstrap-input-box": "0.1.x",
     "armory-blrrtstrap-line-clamp": "0.1.x",
     "armory-blrrtstrap-link": "0.1.x",
@@ -44,7 +43,7 @@
     "armory-blrrtstrap-wami": "0.1.x"
   },
   "name": "armory-blrrtstrap",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.styl",
   "ignore": [
     "**/.*",
