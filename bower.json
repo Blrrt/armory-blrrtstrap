@@ -44,7 +44,7 @@
     "armory-blrrtstrap-wami": "0.1.x"
   },
   "name": "armory-blrrtstrap",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "index.styl",
   "ignore": [
     "**/.*",
