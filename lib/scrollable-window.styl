@@ -1,0 +1,18 @@
+.armor-blrrtstrap .scrollable-window
+.armor-blrrtstrap-scrollable-window
+  display block
+  overflow auto
+  overflow-scrolling touch
+  &::-webkit-scrollbar
+    width 10px
+  &::-webkit-scrollbar-track
+    background-image linear-gradient(left, rgba(#000, 0) 50%, rgba(#000, .15) 50%)
+    &:window-inactive
+      background-image linear-gradient(left, rgba(#000, 0) 50%, rgba(#000, .05) 50%)
+  &::-webkit-scrollbar-thumb
+    background-image linear-gradient(left, rgba(#000, 0) 50%, rgba(#000, .45) 50%)
+    &:window-inactive
+      background-image linear-gradient(left, rgba(#000, 0) 50%, rgba(#000, .15) 50%)
+  &::-webkit-scrollbar-corner
+  &::-webkit-scrollbar-resizer
+    display none

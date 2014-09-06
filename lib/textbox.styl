@@ -1,0 +1,46 @@
+.armor-blrrtstrap .textbox
+.armor-blrrtstrap-textbox
+  background-color #fff
+  border-color lighten(#ccc, 10)
+  border-style solid
+  border-width 1px
+  color #666
+  cursor text
+  display inline-block
+  font-size 1.4rem
+  line-height 2rem
+  padding .4rem
+  transition all 0.2s
+  width 100%
+  &::-webkit-input-placeholder
+    color #999
+  &:-moz-placeholder
+  &::-moz-placeholder
+    color #999
+  &:-ms-input-placeholder
+    color #999
+  &::input-placeholder
+    color #999
+  &:active
+  &:focus
+    border-color #ccc
+    color #333
+
+for length, i in x-small small medium large x-large
+  .armor-blrrtstrap .textbox-length-{length}
+  .armor-blrrtstrap-textbox-length-{length}
+    width (3 * i + 2) * 16px
+
+.armor-blrrtstrap .textbox-status-error
+.armor-blrrtstrap-textbox-status-error
+  color #df2000
+  border-color #f1cbc4
+  &:focus
+    border-color darken(@border-color, 10)
+
+.armor-blrrtstrap .textbox-status-success
+.armor-blrrtstrap-textbox-status-success
+  color #01a533
+  border-color #c4e5ce
+  &:focus
+    border-color darken(@border-color, 10)

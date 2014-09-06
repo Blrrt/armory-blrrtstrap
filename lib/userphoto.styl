@@ -1,0 +1,55 @@
+.armor-blrrtstrap .userphoto
+.armor-blrrtstrap-userphoto
+  background-size cover
+  display inline-block
+  font-size 2.1rem
+  height 5rem
+  line-height @height
+  overflow hidden
+  position relative
+  vertical-align middle
+  width @height
+  &::before
+    background-color #ccc
+    bottom 0
+    color #fff
+    content 'n_n'
+    display block
+    font-weight bold
+    left 0
+    position absolute
+    right 0
+    text-align center
+    top 0
+
+.armor-blrrtstrap .userphoto-blank::before
+.armor-blrrtstrap-userphoto-blank::before
+  background-color transparent
+  color transparent
+
+.armor-blrrtstrap .userphoto-clickable
+.armor-blrrtstrap-userphoto-clickable
+  cursor pointer
+  &::after
+    background #333
+    opacity 0
+    position relative
+    transition all .3s
+  &:hover::after
+    opacity .2
+
+.armor-blrrtstrap .userphoto-image
+.armor-blrrtstrap-userphoto-image
+  absolute top left
+  bottom 0
+  display block
+  right 0
+  width 100%
+
+for size in (x-small 3rem) (small 4rem) (medium 5rem) (large 6rem) (x-large 7rem)
+  .armor-blrrtstrap .userphoto-size-{size}
+  .armor-blrrtstrap-userphoto-size-{size}
+    font-size .42 * size[1]
+    height size[1]
+    line-height size[1]
+    width size[1]

@@ -1,0 +1,20 @@
+{
+  "name": "armory-base-file-input",
+  "version": "0.1.2",
+  "main": "index.styl",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "homepage": "https://github.com/psirenny/armory-base-file-input",
+  "_release": "0.1.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.2",
+    "commit": "ddb6396ceb5dea02fc4cd1c4c79485e8d114dbcb"
+  },
+  "_source": "git://github.com/psirenny/armory-base-file-input.git",
+  "_target": "0.1.x",
+  "_originalSource": "armory-base-file-input"
+}

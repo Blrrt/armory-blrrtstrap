@@ -1,0 +1,10 @@
+{
+  "name": "armory-base-stack",
+  "version": "0.1.0",
+  "main": "index.styl",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}

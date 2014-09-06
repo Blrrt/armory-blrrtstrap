@@ -1,0 +1,68 @@
+.armor-blrrtstrap .text-button
+.armor-blrrtstrap-text-button
+  backface-visibility hidden
+  color #666
+  cursor pointer
+  display inline-block
+  line-height 0
+  text-align center
+  transition opacity .2s
+
+.armor-blrrtstrap .text-button-color-light
+.armor-blrrtstrap-text-button-color-light
+  color #999
+
+.armor-blrrtstrap .text-button-color-dark
+.armor-blrrtstrap-text-button-color-dark
+  color #333
+
+.armor-blrrtstrap .text-button-icon
+.armor-blrrtstrap-text-button-icon
+  display inline-block
+  font-size 12px
+  line-height 16px
+  vertical-align middle
+  &::before
+    transition border-color .2s
+
+.armor-blrrtstrap .text-button-icon-2x
+.armor-blrrtstrap-text-button-icon-2x
+  font-size 24px
+  line-height 32px
+
+.armor-blrrtstrap .text-button-text
+.armor-blrrtstrap-text-button-text
+  display inline-block
+  font-size 12px
+  line-height 16px
+  vertical-align middle
+
+.armor-blrrtstrap .text-button-text-wrap
+.armor-blrrtstrap-text-button-text-wrap
+  display block
+
+.armor-blrrtstrap .text-button-icon ~ .text-button-text:not(.text-button-text-wrap)
+.armor-blrrtstrap-text-button-icon ~ .armor-blrrtstrap-text-button-text:not(.text-button-text-wrap)
+  margin-left 1rem
+
+.armor-blrrtstrap .text-button-text:not(.text-button-text-wrap) ~ .text-button-icon
+.armor-blrrtstrap-text-button-text:not(.text-button-text-wrap) ~ .armor-blrrtstrap-text-button-icon
+  margin-right 1rem
+
+.armor-blrrtstrap .text-button-inverted
+.armor-blrrtstrap-text-button-inverted
+  color #fff
+
+.armor-blrrtstrap .text-button-inactive
+.armor-blrrtstrap-text-button-inactive
+  opacity .3
+
+.armor-blrrtstrap .text-button:hover
+.armor-blrrtstrap-text-button:hover
+  opacity .65
+
+.armor-blrrtstrap .text-button-active
+.armor-blrrtstrap-text-button-active
+  cursor default
+  &:hover
+    opacity 1

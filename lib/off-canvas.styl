@@ -1,0 +1,40 @@
+.armor-blrrtstrap .off-canvas
+.armor-blrrtstrap-off-canvas
+  display block
+  height 100%
+
+.armor-blrrtstrap .off-canvas-view
+.armor-blrrtstrap-off-canvas-view
+  display block
+  height 100%
+  position absolute
+  transition all .2s
+  width 100%
+  z-index 200
+  &.close.left
+    box-shadow -2px 1px 2px rgba(#000, .15)
+    left -6rem
+    transform translateX(100%)
+  &.close.right
+    box-shadow 2px 1px 2px rgba(#000, .15)
+    right -6rem
+    transform translateX(-100%)
+
+.armor-blrrtstrap .off-canvas-column
+.armor-blrrtstrap-off-canvas-column
+  background-color #fff
+  bottom 0
+  display none
+  padding 1rem
+  position absolute
+  top 0
+  transition all .2s
+  z-index 100
+  &.open
+    display block
+  &.left
+    left 0
+    right 6rem
+  &.right
+    left 6rem
+    right 0

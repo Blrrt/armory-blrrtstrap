@@ -1,0 +1,40 @@
+@import 'text'
+
+.armor-blrrtstrap .paragraph
+.armor-blrrtstrap-paragraph
+  @extend .armor-blrrtstrap-text
+  display block
+  hyphens auto
+
+.armor-blrrtstrap .paragraph-color-dark
+.armor-blrrtstrap-paragraph-color-dark
+  @extend .armor-blrrtstrap-text-color-dark
+
+.armor-blrrtstrap .paragraph-color-light
+.armor-blrrtstrap-paragraph-color-light
+  @extend .armor-blrrtstrap-text-color-light
+
+.armor-blrrtstrap .paragraph-inverted
+.armor-blrrtstrap-paragraph-inverted
+  @extend .armor-blrrtstrap-text-inverted
+
+for size in x-small small medium large x-large
+  .armor-blrrtstrap .paragraph-size-{size}
+  .armor-blrrtstrap-paragraph-size-{size}
+    @extend .armor-blrrtstrap-text-size-{size}
+
+.armor-blrrtstrap .paragraph-spacing-large
+.armor-blrrtstrap-paragraph-spacing-large
+  @extend .armor-blrrtstrap-text-spacing-large
+
+.armor-blrrtstrap .paragraph-spacing-small
+.armor-blrrtstrap-paragraph-spacing-small
+  @extend .armor-blrrtstrap-text-spacing-small
+
+.armor-blrrtstrap .paragraph-status-error
+.armor-blrrtstrap-paragraph-status-error
+  @extend .armor-blrrtstrap-text-status-error
+
+.armor-blrrtstrap .paragraph-status-success
+.armor-blrrtstrap-paragraph-status-success
+  @extend .armor-blrrtstrap-text-status-success

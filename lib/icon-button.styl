@@ -1,0 +1,21 @@
+.armor-blrrtstrap .icon-button
+.armor-blrrtstrap-icon-button
+  color #666
+  cursor pointer
+  display inline-block
+  font-size 2.8rem
+  line-height 3.2rem
+  min-width 4rem
+  padding .7rem .4rem .3rem
+  transition all .2s
+  &:hover
+    color #333
+
+for size in (x-small 1.1rem 2.5rem) (small 1.4rem 3rem) (medium 2.1rem 3.5rem) (large 2.8rem 4rem) (x-large 2.1rem 5rem)
+  .armor-blrrtstrap .icon-button-size-{size}
+  .armor-blrrtstrap-icon-button-size-{size}
+    font-size size[1]
+    line-height size[2] - 1rem
+    min-width size[2]
+    padding-bottom .2rem unless (size[2] % 1 == 0)
+    padding-top .8rem unless (size[2] % 1 == 0)
