@@ -1,6 +1,5 @@
 .armor-blrrtstrap .userphoto
 .armor-blrrtstrap-userphoto
-  background-size cover
   display inline-block
   font-size 2.1rem
   height 5rem
@@ -9,18 +8,6 @@
   position relative
   vertical-align middle
   width @height
-  &::before
-    background-color #ccc
-    bottom 0
-    color #fff
-    content 'n_n'
-    display block
-    font-weight bold
-    left 0
-    position absolute
-    right 0
-    text-align center
-    top 0
 
 .armor-blrrtstrap .userphoto-blank::before
 .armor-blrrtstrap-userphoto-blank::before
@@ -40,11 +27,29 @@
 
 .armor-blrrtstrap .userphoto-image
 .armor-blrrtstrap-userphoto-image
+.armor-blrrtstrap .userphoto-image-blank
+.armor-blrrtstrap-userphoto-image-blank
   absolute top left
   bottom 0
   display block
   right 0
   width 100%
+
+.armor-blrrtstrap .userphoto-image-blank
+.armor-blrrtstrap-userphoto-image-blank
+  background-size cover
+  &::before
+    background-color #ccc
+    bottom 0
+    color #fff
+    content 'n_n'
+    display block
+    font-weight bold
+    left 0
+    position absolute
+    right 0
+    text-align center
+    top 0
 
 for size in (x-small 3rem) (small 4rem) (medium 5rem) (large 6rem) (x-large 7rem)
   .armor-blrrtstrap .userphoto-size-{size}
