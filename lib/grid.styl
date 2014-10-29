@@ -1,0 +1,24 @@
+.armor-blrrtstrap .row
+.armor-blrrtstrap-row
+  display flex
+
+.armor-blrrtstrap .row-center
+.armor-blrrtstrap-row-center
+  justify-content center
+
+.armor-blrrtstrap .col
+.armor-blrrtstrap-col
+  display block
+  flex 1
+
+for i in 1..12
+  .armor-blrrtstrap .col-{i}
+  .armor-blrrtstrap-col-{i}
+    flex-basis (100 * i / 12) %
+    max-width @flex-basis
+  for device in (tablet 48em) (desktop 62em) (widescreen 75em)
+    .armor-blrrtstrap .col-{device}-{i}
+    .armor-blrrtstrap-col-{device}-{i}
+      @media (min-width: device[1])
+        flex-basis (100 * i / 12) %
+        max-width @flex-basis

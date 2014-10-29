@@ -20,13 +20,21 @@
     &:hover
       background-color rgba(#000, .6)
 
-for size in (x-small 1.3rem 2.5rem) (small 1.4rem 3rem) (medium 1.6rem 3.5rem) (large 1.8rem 4rem) (x-large 2.1rem 5rem)
+.armor-blrrtstrap .button-text
+.armor-blrrtstrap-button-text
+  display inline
+
+.armor-blrrtstrap .button-text-muted
+.armor-blrrtstrap-button-text-muted
+  color rgba(#fff, .5)
+
+for size in (x-small 1.3rem 2.5rem) (small 1.4rem 3rem) (medium 1.6rem 3.5rem) (large 1.7rem 4.5rem) (x-large 1.8rem 6.5rem)
   .armor-blrrtstrap .button-size-{size}
   .armor-blrrtstrap-button-size-{size}
     font-size size[1]
     line-height size[2] - 1rem
     min-width size[2]
     padding-bottom .4rem unless (size[2] % 1 == 0)
-    padding-left (size[2] / 3)
-    padding-right (size[2] / 3)
+    padding-left round(size[2] / 3)
+    padding-right @padding-left
     padding-top .6rem unless (size[2] % 1 == 0)
