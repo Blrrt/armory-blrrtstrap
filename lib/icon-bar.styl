@@ -4,6 +4,7 @@
   display block
   height 6.5rem
   overflow hidden
+  position relative
   text-align center
 
 .armor-blrrtstrap .icon-bar-items
@@ -32,6 +33,22 @@
     transform translateY(-100%)
   &.open.bottom
     transform translateY(-100%)
+
+for device in (tablet 48em) (desktop 62em) (widescreen 75em)
+  .armor-blrrtstrap .icon-bar.wrap-below-{device[0]} .icon-bar-items
+  .armor-blrrtstrap-icon-bar.wrap-below-{device[0]} .armor-blrrtstrap-icon-bar-items
+    @media (max-width: device[1] - .01em)
+      left 0
+      opacity 0
+      pointer-events none
+      position absolute
+      right 0
+      transition all 0.5s
+      &.active
+        opacity 1
+        pointer-events auto
+      &::before
+        display none
 
 .armor-blrrtstrap .icon-bar-item
 .armor-blrrtstrap-icon-bar-item
