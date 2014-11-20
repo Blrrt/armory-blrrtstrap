@@ -1,0 +1,29 @@
+.soundbite
+  display block
+  float left
+  margin-bottom 0.5rem
+  margin-right 0.8rem
+  vertical-align top
+  &.break
+    clear left
+
+.soundbite-text
+  color #fff
+  display block
+  font-size 3.7rem
+  line-height 4rem
+  opacity 0.5
+  transition all 0.2s
+  @media (max-width: 48em)
+    font-size 2.2rem
+    line-height 2.5rem
+
+.soundbite-sound
+  display block
+  opacity 0
+  transition all 0.2s
+
+.soundbite.active
+  .soundbite-text
+  .soundbite-sound
+    opacity 1
