@@ -15,10 +15,10 @@ for i in 1..12
   .armor-blrrtstrap .col-{i}
   .armor-blrrtstrap-col-{i}
     flex-basis (100 * i / 12) %
-    max-width @flex-basis
+    max-width i * 6rem
   for device in (tablet 48em) (desktop 62em) (widescreen 75em)
     .armor-blrrtstrap .col-{device}-{i}
     .armor-blrrtstrap-col-{device}-{i}
+      max-width i * 6rem
       @media (min-width: device[1])
         flex-basis (100 * i / 12) %
-        max-width @flex-basis
