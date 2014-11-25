@@ -19,19 +19,17 @@
 .armor-blrrtstrap .modal-window
 .armor-blrrtstrap-modal-window
   background-color #fff
-  bottom 0
-  display block
-  left 0
-  padding 2rem
-  position absolute
-  right 0
+  display flex
+  flex-direction column
+  height 100%
+  padding 3rem 1.5rem
+  position relative
   transition all .2s
-  top 0
+  width 100%
   @media (min-width: 32em)
-    padding 3rem
-    position relative
+    max-height 50%
+    max-width 45rem
     transform translateY(-100%)
-    width 45rem
 
 .armor-blrrtstrap .modal.show .modal-window
 .armor-blrrtstrap-modal.show .armor-blrrtstrap-modal-window
@@ -52,3 +50,10 @@
   width @line-height
   &:hover
     color #333
+
+.armor-blrrtstrap .modal-window-body
+.armor-blrrtstrap-modal-window-body
+  display block
+  overflow auto
+  padding-left 1.5rem
+  padding-right 1.5rem
