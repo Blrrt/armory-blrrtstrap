@@ -7,3 +7,10 @@
   padding-left 2rem
   padding-right 2rem
   width 100%
+
+.armor-blrrtstrap .container-fixed
+.armor-blrrtstrap-container-fixed
+  max-width 32rem
+  for device in (tablet 48em) (desktop 62em) (widescreen 75em)
+    @media (min-width: device[1])
+      max-width unit(1.6 * device[1], rem)
