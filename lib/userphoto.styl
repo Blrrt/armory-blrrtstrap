@@ -1,11 +1,11 @@
 .armor-blrrtstrap .userphoto
 .armor-blrrtstrap-userphoto
   display inline-block
-  font-size 2.1rem
   height 5rem
   line-height @height
   overflow hidden
   position relative
+  text-align center
   vertical-align middle
   width @height
 
@@ -34,6 +34,8 @@
   display block
   right 0
   width 100%
+  &:nth-child(2):nth-last-child(1) // 2 of 2
+    left 50%
 
 .armor-blrrtstrap .userphoto-image-blank
 .armor-blrrtstrap-userphoto-image-blank
@@ -44,11 +46,11 @@
     color #fff
     content 'n_n'
     display block
+    font-size 2.1rem
     font-weight bold
     left 0
     position absolute
     right 0
-    text-align center
     top 0
 
 for size in (x-small 3rem) (small 4rem) (medium 5rem) (large 6rem) (x-large 7rem)
