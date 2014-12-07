@@ -32,10 +32,10 @@
   absolute top left
   bottom 0
   display block
+  height 5rem
   right 0
-  width 100%
-  &:nth-child(2):nth-last-child(1) // 2 of 2
-    left 50%
+  transition all 0.2s
+  width @height
 
 .armor-blrrtstrap .userphoto-image-blank
 .armor-blrrtstrap-userphoto-image-blank
@@ -52,6 +52,14 @@
     position absolute
     right 0
     top 0
+  
+.armor-blrrtstrap .userphoto-image[src=""]
+.armor-blrrtstrap-userphoto-image[src=""]
+.armor-blrrtstrap .userphoto-loading .userphoto-image
+.armor-blrrtstrap-userphoto-loading.armor-blrrtstrap-userphoto-image
+.armor-blrrtstrap .userphoto-loading .userphoto-image-blank
+.armor-blrrtstrap-userphoto-loading.armor-blrrtstrap-userphoto-image-blank
+  opacity 0
 
 for size in (x-small 3rem) (small 4rem) (medium 5rem) (large 6rem) (x-large 7rem)
   .armor-blrrtstrap .userphoto-size-{size}
@@ -60,3 +68,10 @@ for size in (x-small 3rem) (small 4rem) (medium 5rem) (large 6rem) (x-large 7rem
     height size[1]
     line-height size[1]
     width size[1]
+
+  .armor-blrrtstrap .userphoto-size-{size} .userphoto-image
+  .armor-blrrtstrap-userphoto-size-{size} .armor-blrrtstrap-userphoto-image
+  .armor-blrrtstrap .userphoto-size-{size} .userphoto-image-blank
+  .armor-blrrtstrap-userphoto-size-{size} .armor-blrrtstrap-userphoto-blank
+    height size[1]
+    width @height
