@@ -6,7 +6,7 @@
     "armory-base-stack": "0.1.x"
   },
   "name": "armory-blrrtstrap",
-  "version": "0.22.2",
+  "version": "0.22.3",
   "main": "index.styl",
   "ignore": [
     "**/.*",
