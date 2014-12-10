@@ -1,0 +1,69 @@
+@keyframes loader-progress
+  0%
+    transform translateX(-5%)
+  70%
+    transform translateX(122.5%)
+  70.01%
+    transform translateX(-30%)
+  100%
+    transform translateX(100%)
+
+@keyframes loader-progress-head
+  0%
+    transform scaleX(1)
+  70%
+    transform scaleX(10)
+  100%
+    transform scalex(1)
+
+.armor-blrrtstrap .loader
+.armor-blrrstrap-loader
+  display block
+  height 0.2rem
+  padding-bottom 0.1rem
+  padding-top 0.2rem
+  width 100%
+
+.armor-blrrtstrap .loader-fixed
+.armor-blrrstrap-loader-fixed
+  left 0
+  padding-bottom 0
+  padding-top 0
+  position absolute
+  right 0
+  z-index 1010
+
+.armor-blrrtstrap .loader-progress
+.armor-blrrtstrap-loader-progress
+.armor-blrrtstrap .loader-progress::after
+.armor-blrrtstrap-loader-progress::after
+  animation-delay 0.5s
+  animation-duration 3.5s
+  animation-iteration-count infinite
+  animation-timing-function linear
+
+.armor-blrrtstrap .loader-progress
+.armor-blrrtstrap-loader-progress
+  bottom 0
+  display block
+  left 0
+  position absolute
+  right 0
+  top 0
+  transform translateX(-5%)
+  &::after
+    background-color #ff3300
+    bottom 0
+    content ''
+    display block
+    position absolute
+    top 0
+    width 5%
+
+.armor-blrrtstrap .loader.active
+.armor-blrrstrap-loader.active
+  .loader-progress
+  .armor-blrrtstrap-loader-progress
+    animation-name loader-progress
+    &:after
+      animation-name loader-progress-head
