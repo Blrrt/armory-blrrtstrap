@@ -14,9 +14,16 @@
 .armor-blrrtstrap .link
 .armor-blrrtstrap-link
   border-bottom 1px dashed #ccc
-  transition all .2s
+  transition all 0.2s
 
-.armor-blrrtstrap .link-disabled
-.armor-blrrtstrap-link-disabled
-  border-bottom 1px dashed #eee
+.armor-blrrtstrap .link-container.disabled
+.armor-blrrtstrap-link-container.disabled
   cursor default
+
+.armor-blrrtstrap .link-container.disabled .link
+.armor-blrrtstrap-link-container.disabled .link
+.armor-blrrtstrap .link.disabled
+.armor-blrrtstrap-link.disabled
+  border-bottom none
+  cursor default
+  opacity 0.5

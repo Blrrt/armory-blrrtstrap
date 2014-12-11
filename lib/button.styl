@@ -14,11 +14,12 @@
   z-index 1
   &:hover
     background-color rgba(#000, .8)
+  &.disabled
   &:disabled
     cursor default
-    color rgba(@color, .5)
+    color rgba(@color, 0.5)
     &:hover
-      background-color rgba(#000, .6)
+      background-color @background-color
 
 .armor-blrrtstrap .button-text
 .armor-blrrtstrap-button-text
@@ -26,7 +27,7 @@
 
 .armor-blrrtstrap .button-text-muted
 .armor-blrrtstrap-button-text-muted
-  color rgba(#fff, .5)
+  color rgba(#fff, 0.5)
 
 for size in (x-small 1.3rem 2.5rem) (small 1.4rem 3rem) (medium 1.6rem 3.5rem) (large 1.6rem 5rem) (x-large 1.8rem 6.5rem)
   .armor-blrrtstrap .button-size-{size}

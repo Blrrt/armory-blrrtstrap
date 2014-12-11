@@ -1,5 +1,32 @@
 .armor-blrrtstrap .alert
 .armor-blrrtstrap-alert
-  background-color #eee
+  background-color rgba(#000, 0.8)
   display block
-  padding 1.5rem
+  left 0
+  opacity 1
+  overflow hidden
+  padding 0.25rem 1rem
+  right 0
+  transition all 0.2s
+
+.armor-blrrtstrap .alert.hide
+.armor-blrrtstrap-alert.hide
+  height 0
+  opacity 0
+  padding-bottom 0
+  padding-top 0
+
+.armor-blrrtstrap .alert-link
+.armor-blrrtstrap-alert-link
+.armor-blrrtstrap .alert-text
+.armor-blrrtstrap-alert-text
+  color #fff
+  display inline
+  font-size 1.4rem
+  line-height 2rem
+
+.armor-blrrtstrap .alert-link
+.armor-blrrtstrap-alert-link
+  cursor pointer
+  &.disabled
+    color rgba(#fff, 0.5)

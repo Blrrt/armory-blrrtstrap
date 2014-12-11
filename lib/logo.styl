@@ -90,3 +90,18 @@ for size in (x-small 4rem .001) (small 4rem .001) (medium 4rem .001) (large 4rem
       bottom -.1rem
     &::after
       bottom .02 * size[1]
+
+.armor-blrrtstrap .logo-grayscale
+.armor-blrrtstrap-logo-grayscale
+  &::before
+    background-color #666
+  &::after
+    border-top-color #666
+  &:hover::before
+    background-color darken(#666, 15)
+  &:hover::after
+    border-top-color darken(#666, 15)
+
+.armor-blrrtstrap .logo-grayscale .logo-image
+.armor-blrrtstrap-logo-grayscale .armor-blrrtstrap-logo-image
+  opacity 0.75
