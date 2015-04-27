@@ -1,46 +1,48 @@
 .armor-blrrtstrap .off-canvas
-.armor-blrrtstrap-off-canvas
+  bottom 0
   display flex
   flex 1
   flex-direction column
-  position relative
-
-.armor-blrrtstrap .off-canvas-open
-.armor-blrrtstrap-off-canvas-open
+  left 0
   overflow-x hidden
+  position absolute
+  right 0
+  top 0
 
-.armor-blrrtstrap .off-canvas-view
-.armor-blrrtstrap-off-canvas-view
+.armor-blrrtstrap .off-canvas__content
   display flex
   flex 1
+  flex-direction row
   position relative
-  transition all .2s
+  transition transform 0.2s
   width 100%
   z-index 200
-  &.close
-    box-shadow -2px 1px 2px rgba(#000, .15)
-  &.close.left
-    left -6rem
-    transform translateX(100%)
-  &.close.right
-    right -6rem
-    transform translateX(-100%)
 
-.armor-blrrtstrap .off-canvas-column
-.armor-blrrtstrap-off-canvas-column
+.armor-blrrtstrap .off-canvas__content--closed.off-canvas__content--direction--left
+  transform translateX(85%)
+
+.armor-blrrtstrap .off-canvas__content--closed.off-canvas__content--direction--right
+  transform translateX(-85%)
+
+.armor-blrrtstrap .off-canvas__column
   background-color #fff
   bottom 0
-  display none
-  padding 1rem
+  display block
   position absolute
   top 0
-  transition all .2s
+  transition transform 0.2s
   z-index 100
-  &.open
-    display block
-  &.left
-    left 0
-    right 6rem
-  &.right
-    left 6rem
-    right 0
+
+.armor-blrrtstrap .off-canvas__column--direction--left
+  left 0
+  right 15%
+
+.armor-blrrtstrap .off-canvas__column--direction--left.off-canvas__column--closed
+  transform translateX(-100%)
+
+.armor-blrrtstrap .off-canvas__column--direction--right
+  right 0
+  left 15%
+
+.armor-blrrtstrap .off-canvas__column--direction--right.off-canvas__column--closed
+  transform translateX(100%)

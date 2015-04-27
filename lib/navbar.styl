@@ -1,10 +1,6 @@
-@import 'nib'
-
 .armor-blrrtstrap .navbar
-.armor-blrrtstrap-navbar
   background-color #fff
   box-shadow 0 1px 2px rgba(#000, .15)
-  clearfix();
   display flex
   height 4rem
   line-height 0
@@ -17,14 +13,13 @@
     padding-left 2rem
     padding-right 2rem
 
-.armor-blrrtstrap .navbar-sticky
-.armor-blrrtstrap-navbar-sticky
+.armor-blrrtstrap .navbar--fixed
   position fixed
-  & + :not(.navbar-sticky)
-    padding-top 4rem
 
-.armor-blrrtstrap .navbar-items
-.armor-blrrtstrap-navbar-items
+.armor-blrrtstrap .navbar--fixed-content
+  padding-top 4rem
+
+.armor-blrrtstrap .navbar__items
   display flex
   align-items center
   align-self center
@@ -34,14 +29,15 @@
   margin-right -1rem
   min-width 1rem
   width 0
-  &:last-child
-    align-self flex-end
-    justify-content flex-end
-  &:first-child
-    align-self flex-start
-    justify-content flex-start
 
-.armor-blrrtstrap .navbar-item
-.armor-blrrtstrap-navbar-items
+.armor-blrrtstrap .navbar__items__item
   display block
   margin-right 1rem
+
+.armor-blrrtstrap .navbar__items:first-child
+  align-self flex-start
+  justify-content flex-start
+
+.armor-blrrtstrap .navbar__items:last-child
+  align-self flex-end
+  justify-content flex-end

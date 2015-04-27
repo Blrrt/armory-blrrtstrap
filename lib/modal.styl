@@ -1,7 +1,7 @@
-.modal-container
+.armor-blrrtstrap .modal-container
   overflow hidden
 
-.modal
+.armor-blrrtstrap .modal
   justify-content center
   align-items flex-start
   display flex
@@ -14,7 +14,7 @@
   width 100%
   z-index 2000
 
-.modal__background
+.armor-blrrtstrap .modal__background
   background-color darken(#333, 15)
   display block
   opacity 0.9
@@ -26,10 +26,10 @@
   right 0
   top 0
 
-.modal--show .modal__background
+.armor-blrrtstrap .modal--show .modal__background
   visibility visible
 
-.modal__window
+.armor-blrrtstrap .modal__window
   background-color #fff
   display flex
   flex-direction column
@@ -44,12 +44,12 @@
   @media (min-width: 32em)
     max-width 45rem
 
-.modal--show .modal__window
+.armor-blrrtstrap .modal--show .modal__window
   transform translateY(0)
   @media (min-width: 32em)
     transform translateY(5rem)
 
-.modal__window__close
+.armor-blrrtstrap .modal__window__close
   color #666
   cursor pointer
   display block
@@ -64,7 +64,7 @@
   &:hover
     color #333
 
-.modal__window__body
+.armor-blrrtstrap .modal__window__body
   display block
   padding-left 1.5rem
   padding-right 1.5rem
