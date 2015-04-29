@@ -1,29 +1,22 @@
 .armor-blrrtstrap .link-container
-.armor-blrrtstrap-link-container
 .armor-blrrtstrap .link
-.armor-blrrtstrap-link
   cursor pointer
   display inline
 
 .armor-blrrtstrap .link-container:hover .link
-.armor-blrrtstrap-link-container:hover .link
 .armor-blrrtstrap .link:hover
-.armor-blrrtstrap-link:hover
   border-bottom-color #333
 
 .armor-blrrtstrap .link
-.armor-blrrtstrap-link
   border-bottom 1px dashed #ccc
-  transition all 0.2s
+  transition-property border-bottom-color, opacity
+  transition-duration 0.2s
 
 .armor-blrrtstrap .link-container.disabled
-.armor-blrrtstrap-link-container.disabled
   cursor default
 
 .armor-blrrtstrap .link-container.disabled .link
-.armor-blrrtstrap-link-container.disabled .link
 .armor-blrrtstrap .link.disabled
-.armor-blrrtstrap-link.disabled
   border-bottom none
   cursor default
   opacity 0.5

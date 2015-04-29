@@ -1,3 +1,6 @@
+.armor-blrrtstrap .off-canvas-container--open
+  overflow hidden
+
 .armor-blrrtstrap .off-canvas
   display flex
   flex 1
@@ -9,23 +12,21 @@
   flex 1
   flex-direction row
   position relative
-  transition transform 0.2s
   z-index 200
-
-.armor-blrrtstrap .off-canvas__content--closed.off-canvas__content--direction--left
-  transform translateX(85%)
-
-.armor-blrrtstrap .off-canvas__content--closed.off-canvas__content--direction--right
-  transform translateX(-85%)
 
 .armor-blrrtstrap .off-canvas__column
   background-color #fff
   bottom 0
   display block
+  overflow-y auto
   position absolute
   top 0
-  transition transform 0.2s
-  z-index 100
+  transition-property transform
+  transition-duration 0.15s
+  z-index 210
+
+.armor-blrrtstrap .off-canvas__column--fixed
+  position fixed
 
 .armor-blrrtstrap .off-canvas__column--direction--left
   left 0

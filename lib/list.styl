@@ -1,0 +1,36 @@
+.armor-blrrtstrap .list
+  display flex
+  flex-direction column
+  height 100%
+  width 100%
+
+.armor-blrrtstrap .list--color--dark
+  background-color #222
+
+.armor-blrrtstrap .list__items
+  display block
+  position relative
+
+.armor-blrrtstrap .list__items + .list__items
+  margin-top 2rem
+  &::before
+    background-color #ccc
+    content ''
+    display block
+    height 1px
+    left 0
+    position absolute
+    right 0
+    top -1rem
+
+.armor-blrrtstrap .list__items__item
+  display block
+
+.armor-blrrtstrap .list__items__item__target
+  color #fff
+  display block
+  font-size 1.6rem
+  line-height 2rem
+
+.armor-blrrtstrap .list__items__item__target--clickable
+  cursor pointer
