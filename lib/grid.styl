@@ -1,19 +1,26 @@
-.armor-blrrtstrap .row
+.armor-blrrtstrap .grid
   display flex
+  flex-wrap wrap
 
-.armor-blrrtstrap .row-center
+.armor-blrrtstrap .grid--center
   justify-content center
 
-.armor-blrrtstrap .col
+.armor-blrrtstrap .grid__cell
   display block
-  flex 1
+  flex-grow 1
 
-for i in 1..12
-  .armor-blrrtstrap .col-{i}
-    flex-basis (100 * i / 12) %
-    max-width i * 6rem
-  for device in (tablet 48em) (desktop 62em) (widescreen 75em)
-    .armor-blrrtstrap .col-{device}-{i}
+.armor-blrrtstrap
+  for i in 1..12
+    & .grid__cell--size--{i}
+      flex-basis (100 * i / 12) %
+      flex-grow 0
       max-width i * 6rem
-      @media (min-width: device[1])
-        flex-basis (100 * i / 12) %
+      width 100%
+    for device in (tablet 48em) (desktop 62em) (widescreen 75em)
+      & .grid__cell--device--{device}--size--{i}
+        flex-basis auto
+        max-width i * 6rem
+        width 100%
+        @media (min-width: device[1])
+          flex-grow 0
+          flex-basis (100 * i / 12) %

@@ -5,13 +5,21 @@ size(n)
 
 .armor-blrrtstrap .avatar
   display inline-block
+  overflow hidden
   size 4
-  transition-duration 0.2s
-  transition-property opacity
   vertical-align middle
-
-.armor-blrrtstrap .avatar--loading
-  opacity 0
 
 .armor-blrrtstrap .avatar--size--small
   size 3
+
+.armor-blrrtstrap .avatar__image
+  display inline-block
+  height 100%
+  position relative
+  transform-origin top left
+  transition opacity 0.2s, filter 0.3s
+  width 100%
+
+.armor-blrrtstrap .avatar__image--loading
+  filter grayscale(0) saturate(0)
+  opacity 0
