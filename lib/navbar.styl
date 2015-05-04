@@ -7,6 +7,8 @@
   padding-left 1rem
   padding-right 1rem
   position relative
+  transform translate3d(0, 0, 0)
+  transition transform 0.2s
   width 100%
   z-index 30
   @media (min-width: 62em)
@@ -18,6 +20,9 @@
 
 .armor-blrrtstrap .navbar--fixed-content
   padding-top 4rem
+
+.armor-blrrtstrap .navbar--unpinned
+  transform translate3d(0, -125%, 0)
 
 .armor-blrrtstrap .navbar__items
   display flex
