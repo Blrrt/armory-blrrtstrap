@@ -4,16 +4,11 @@
   display flex
   height 4rem
   line-height 0
-  padding-left 1rem
-  padding-right 1rem
   position relative
   transform translate3d(0, 0, 0)
   transition transform 0.2s
   width 100%
   z-index 30
-  @media (min-width: 62em)
-    padding-left 2rem
-    padding-right 2rem
 
 .armor-blrrtstrap .navbar--fixed
   position fixed
@@ -24,25 +19,28 @@
 .armor-blrrtstrap .navbar--unpinned
   transform translate3d(0, -125%, 0)
 
-.armor-blrrtstrap .navbar__items
+.armor-blrrtstrap .navbar__section
   display flex
-  align-items center
+
+.armor-blrrtstrap .navbar__section--align--center
+.armor-blrrtstrap .navbar__section--align--left
+.armor-blrrtstrap .navbar__section--align--right
+  flex 0 0 (2/12 * 100%)
+
+.armor-blrrtstrap .navbar__section--align--center
   align-self center
-  flex-grow 1
-  height inherit
+  flex-basis (8/12 * 100%)
   justify-content center
-  margin-right -1rem
-  min-width 1rem
-  width 0
 
-.armor-blrrtstrap .navbar__items__item
-  display block
-  margin-right 1rem
-
-.armor-blrrtstrap .navbar__items:first-child
-  align-self flex-start
-  justify-content flex-start
-
-.armor-blrrtstrap .navbar__items:last-child
+.armor-blrrtstrap .navbar__section--align--right
   align-self flex-end
   justify-content flex-end
+
+.armor-blrrtstrap .navbar__title
+  color #999
+  display block
+  font-size 2.4rem
+  line-height 4rem
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap

@@ -1,107 +1,59 @@
 .armor-blrrtstrap .logo
-.armor-blrrtstrap-logo
-  color #fff
-  display inline-block
-  filter: drop-shadow(0 .1rem .1rem rgba(#000, .5))
-  font-size 2.4rem
-  font-weight bold
-  letter-spacing -.1em
-  line-height 4rem
-  padding-bottom 1rem
-  padding-left 1rem
-  padding-right 1rem
+  display inline-flex
+  filter drop-shadow(0 .1rem .1rem rgba(#000, .5))
   position relative
-  text-align center
-  text-transform uppercase
+  transition -webkit-filter 0.2s, filter 0.2s
   &::before
-    background-color #e42300
-    background-image linear-gradient(top, rgba(#fff, .15), transparent)
-    bottom .9rem
+    bottom -0.2rem
     content ''
     display block
+    height 0.2rem
     left 0
+    position absolute
     right 0
-    position absolute
-    transform matrix3d(1, 0, 0, 0, 0, 1, 0, .001, 0, 0, 1, 0, 0, 0, 0, 1)
-    transition all .2s
-    top 0
-    z-index -1
-  &::after
-    border-left .7rem solid transparent
-    border-right .7rem solid transparent
-    border-top 1.2rem solid #e42300
-    bottom 1.1rem
-    display block
-    content ''
-    height 0
-    left 45%
-    position absolute
-    transform rotate(10deg) translate(-50%, 100%)
-    transition all .2s
-    width 0
 
-.armor-blrrtstrap .logo-overhang
-.armor-blrrtstrap-logo-overhang
-  padding-bottom 0
-  &::before
-    bottom -.1rem
-  *::after
-    bottom .1rem
-
-.armor-blrrtstrap .logo-clickable:hover
-.armor-blrrtstrap-logo-clickable:hover
+.armor-blrrtstrap .logo--clickable:hover
   cursor pointer
-  &::before
-    background-color darken(#e42300, 15)
-  &::after
-    border-top-color darken(#e42300, 15)
+  filter drop-shadow(0 .2rem .2rem rgba(#000, 0.6))
 
-.armor-blrrtstrap .logo-image
-.armor-blrrtstrap-logo-image
-  background-position center
+.armor-blrrtstrap .logo--menu
+  margin-left -1.4rem
+
+.armor-blrrtstrap .logo--overhang
+  margin-bottom -1rem
+
+.armor-blrrtstrap .logo__addon
+.armor-blrrtstrap .logo__main
+  background-image linear-gradient(#e74224, #e42301)
+  display inline-block
+
+.armor-blrrtstrap .logo__addon
+  clip-path polygon(0 0, 100% 0, 100% 100%, 2% 100%)
+  color #fff
+  font-size 1.4rem
+  height 4rem
+  line-height 4rem
+  padding-left 0.5rem
+  text-align center
+  width 2rem
+
+.armor-blrrtstrap .logo__main
+  padding-bottom 1.5rem
+  padding-top 0.5rem
+  &:last-child
+    clip-path polygon(0 0, 100% 0, 98% 4rem, 1.7rem 4rem, 1rem 100%, 0.7rem 4rem, 0 4rem)
+    padding-right 0.5rem
+    @media (min-width: 48em)
+      clip-path polygon(0 0, 100% 0, 98% 4rem, 4.2rem 4rem, 3.5rem 100%, 3.2rem 4rem, 0 4rem)
+  &:first-child
+    padding-left 0.5rem
+  &:first-child:last-child
+    clip-path polygon(0 0, 100% 0, 98% 4rem, 1.7rem 4rem, 1rem 100%, 0.7rem 4rem, 2% 4rem)
+    @media (min-width: 48em)
+      clip-path polygon(0 0, 100% 0, 98% 4rem, 4.2rem 4rem, 3.5rem 100%, 3.2rem 4rem, 2% 4rem)
+
+.armor-blrrtstrap .logo__main__image
+  background-position 50%
   background-repeat no-repeat
-  background-size contain
   color transparent
   display inline-block
-  height 100%
-  width auto
-
-for size in (x-small 4rem .001) (small 4rem .001) (medium 4rem .001) (large 4rem .001) (x-large 13rem .0005)
-  .armor-blrrtstrap .logo-size-{size[0]}
-  .armor-blrrtstrap-logo-size-{size[0]}
-    font-size .75 * size[1]
-    line-height size[1]
-    padding-bottom .25 * size[1]
-    padding-left .25 * size[1]
-    padding-right @padding-left
-    &::before
-      bottom .22 * size[1]
-      transform matrix3d(1, 0, 0, 0, 0, 1, 0, size[2], 0, 0, 1, 0, 0, 0, 0, 1)
-    &::after
-      border-top-width .3 * size[1]
-      border-left-width .6 * @border-top-width
-      border-right-width @border-left-width
-      bottom .27 * size[1]
-
-  .armor-blrrtstrap .logo-size-{size}.logo-overhang
-  .armor-blrrtstrap-logo-size-{size}.armor-blrrtstrap-overhang
-    padding-bottom 0
-    &::before
-      bottom -.1rem
-    &::after
-      bottom .02 * size[1]
-
-.armor-blrrtstrap .logo-grayscale
-.armor-blrrtstrap-logo-grayscale
-  &::before
-    background-color #666
-  &::after
-    border-top-color #666
-  &:hover::before
-    background-color darken(#666, 15)
-  &:hover::after
-    border-top-color darken(#666, 15)
-
-.armor-blrrtstrap .logo-grayscale .logo-image
-.armor-blrrtstrap-logo-grayscale .armor-blrrtstrap-logo-image
-  opacity 0.75
