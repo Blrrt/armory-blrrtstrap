@@ -1,18 +1,23 @@
 .armor-blrrtstrap .modal-container--open
-  overflow hidden
+  height 100vh
+  overflow-y hidden
 
 .armor-blrrtstrap .modal
   justify-content center
   align-items flex-start
   display flex
-  height 100%
+  height 100vh
   left 0
-  overflow auto
+  overflow-y auto
+  padding-bottom 10rem
   pointer-events none
   position fixed
+  right 0
   top 0
-  width 100%
   z-index 2000
+
+.armor-blrrtstrap .modal--hide
+  overflow-y hidden
 
 .armor-blrrtstrap .modal__background
   background-color darken(#333, 15)
