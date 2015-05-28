@@ -9,15 +9,16 @@
   height 100vh
   left 0
   overflow-y auto
-  padding-bottom 10rem
-  pointer-events none
   position fixed
   right 0
   top 0
   z-index 2000
+  @media (min-width: 32em)
+    padding-bottom 10rem
 
 .armor-blrrtstrap .modal--hide
   overflow-y hidden
+  pointer-events none
 
 .armor-blrrtstrap .modal__background
   background-color darken(#333, 15)
