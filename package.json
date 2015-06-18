@@ -12,7 +12,7 @@
   ],
   "license": "Unlicense",
   "main": "index.styl",
-  "name": "armory-blrrtstrap",
+  "name": "@blrrt/armory-blrrtstrap",
   "repository": {
     "type": "git",
     "url": "https://github.com/blrrt/armory-blrrtstrap.git"
