@@ -1,13 +1,9 @@
-@import '../../armory-base-stack'
+@import 'clearfix'
 
 .armor-blrrtstrap .stack
-.armor-blrrtstrap-stack
-  @extend .armor-base-stack
+.armor-blrrtstrap .stack__items
+.armor-blrrtstrap .stack__items__item
+  display block
 
-.armor-blrrtstrap .stack-items
-.armor-blrrtstrap-stack-items
-  @extend .armor-base-stack-items
-
-.armor-blrrtstrap .stack-item
-.armor-blrrtstrap-stack-item
-  @extend .armor-base-stack-item
+.armor-blrrtstrap .stack__items__item
+  clearfix()

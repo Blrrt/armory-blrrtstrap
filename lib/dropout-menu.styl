@@ -1,9 +1,7 @@
 .armor-blrrtstrap .dropout
-.armor-blrrtstrap-dropout
   position relative
 
 .armor-blrrtstrap .dropout-menu
-.armor-blrrtstrap-dropout-menu
   display block
   left 0
   overflow hidden
@@ -13,7 +11,6 @@
 
 for dir in up right down left
   .armor-blrrtstrap .dropout-menu-direction-{dir}
-  .armor-blrrtstrap-dropout-menu-direction-{dir}
     dir = bottom if dir == up
     dir = left if dir == right
     dir = top if dir == down
@@ -24,13 +21,11 @@ for dir in up right down left
       margin-{dir} -100%
 
 .armor-blrrtstrap .dropout-menu-items
-.armor-blrrtstrap-dropout-menu-items
   background-color rgba(#000, .6)
   display block
   padding 8px
   transition all .2s
 
 .armor-blrrtstrap .dropout-menu-item
-.armor-blrrtstrap-dropout-menu-item
   display inline-block
   margin-right 16px

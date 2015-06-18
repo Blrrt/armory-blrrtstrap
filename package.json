@@ -1,32 +1,21 @@
 {
-  "author": "Blrrt",
+  "author": "Blrrt, Inc.",
   "bugs": {
     "url": "https://github.com/blrrt/armory-blrrtstrap/issues"
   },
-  "description": "Button component made for the blrrtstrap armor.",
-  "devDependencies": {
-    "gulp-autoprefixer": "0.0.10",
-    "gulp": "^3.8.5",
-    "gulp-csslint": "^0.1.5",
-    "gulp-stylus": "^1.0.3",
-    "nib": "^1.0.3"
-  },
-  "homepage": "https://github.com/psirenny/armory-blrrtstrap",
+  "description": "CSS framework for Blrrt.",
+  "homepage": "https://github.com/blrrt/armory-blrrtstrap",
   "keywords": [
-    "armor",
-    "blrrtstrap",
+    "blrrt",
     "css",
-    "ui"
+    "framework"
   ],
-  "license": "MIT",
-  "main": "gulpfile.js",
+  "license": "Unlicense",
+  "main": "index.styl",
   "name": "armory-blrrtstrap",
   "repository": {
     "type": "git",
     "url": "https://github.com/blrrt/armory-blrrtstrap.git"
   },
-  "scripts": {
-    "test": "npm test"
-  },
-  "version": "0.27.1"
+  "version": "0.28.0"
 }

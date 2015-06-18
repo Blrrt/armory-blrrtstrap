@@ -1,28 +1,22 @@
 .armor-blrrtstrap .link-list
-.armor-blrrtstrap-link-list
   display block
 
 .armor-blrrtstrap .link-list-inline
-.armor-blrrtstrap-link-list-inline
   display inline-block
 
 .armor-blrrtstrap .link-list-items
-.armor-blrrtstrap-link-list-items
   display inline-block
   line-height 0
   margin-right -2rem
   min-width -@margin-right
 
 .armor-blrrtstrap .link-list-item
-.armor-blrrtstrap-link-list-item
   display inline-block
   margin-right 2rem
   min-width @margin-right
 
 for length, i in xx-small x-small small medium large x-large xx-large
   .armor-blrrtstrap .link-list-spacing-{length} .link-list-item
-  .armor-blrrtstrap-link-list-spacing-{length} .link-list-item
   .armor-blrrtstrap .link-list-item-spacing-{length}
-  .armor-blrrtstrap-link-list-item-spacing-{length}
     margin-right (.5 * i + .5) rem
     min-width @margin-right

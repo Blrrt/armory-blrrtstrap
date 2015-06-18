@@ -1,18 +1,15 @@
 .armor-blrrtstrap .hidden
-.armor-blrrtstrap-hidden
   display none !important
   visibility hidden !important
 
 for device in (mobile 48em) (tablet 62em) (desktop 75em)
   .armor-blrrtstrap .hidden-above-{device[0]}
-  .armor-blrrtstrap-hidden-above-{device[0]}
     @media (min-width: device[1])
       display none !important
       visibility hidden !important
 
 for device in (tablet 48em) (desktop 62em) (widescreen 75em)
   .armor-blrrtstrap .hidden-below-{device[0]}
-  .armor-blrrtstrap-hidden-below-{device[0]}
     @media (max-width: device[1] - .01em)
       display none !important
       visibility hidden !important

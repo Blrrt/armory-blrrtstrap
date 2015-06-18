@@ -2,13 +2,10 @@ for pos in top right bottom left
   for size in (xx-small 0.2rem) (x-small 0.5rem) (small 1rem) (medium 1.5rem) (large 2rem) (x-large 3rem) (xx-large 5rem)
     for pos in top right bottom left
       .armor-blrrtstrap .inner-space-{pos}-{size[0]}
-      .armor-blrrtstrap-inner-space-{pos}-{size[0]}
         padding-{pos} size[1]
       .armor-blrrtstrap .space-{pos}-{size[0]}
-      .armor-blrrtstrap-space-{pos}-{size[0]}
         margin-{pos} size[1]
       .armor-blrrtstrap .hold-space-{pos}-{size[0]}
-      .armor-blrrtstrap-hold-space-{pos}-{size[0]}
         margin-{pos} - size[1]
         if (pos == top) || (pos == bottom)
           min-height size[1]
