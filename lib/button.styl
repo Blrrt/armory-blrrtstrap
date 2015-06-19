@@ -1,37 +1,45 @@
 .armor-blrrtstrap .button
-  background-color rgba(#000, .6)
+  background-color rgba(#000, 0.6)
+  border-color transparent
+  border-style dashed
+  border-width 0.2rem
   color #fff
   cursor pointer
   display inline-block
   font-size 1.6rem
   line-height 2.5rem
   min-width 3.5rem
-  padding .6rem 1.166666666666667rem .4rem
+  padding-bottom 0.3rem
+  padding-left 1rem
+  padding-right 1rem
+  padding-top 0.3rem
   position relative
   text-align center
-  transition all .2s
+  transition background-color 0.2s, border-color 0.2s, color 0.2s
   z-index 1
-  &:hover
-    background-color rgba(#000, .8)
+  &:hover:not(:disabled):not(.disabled)
+    background-color rgba(#000, 0.8)
   &.disabled
   &:disabled
     cursor default
-    color rgba(@color, 0.5)
-    &:hover
-      background-color @background-color
+    color rgba(#fff, 0.5)
 
-.armor-blrrtstrap .button-text
+.armor-blrrtstrap .button--dropzone--dragging
+.armor-blrrtstrap .button--dropzone--dragover
+  border-color #fff
+
+.armor-blrrtstrap .button--dropzone--dragover
+  background-color rgba(#000, 0.8)
+
+.armor-blrrtstrap .button--size--large
+  font-size 1.6rem
+  line-height 4rem
+  min-width 5rem
+  padding-left 1.8rem
+  padding-right 1.8rem
+
+.armor-blrrtstrap .button__text
   display inline
 
-.armor-blrrtstrap .button-text-muted
+.armor-blrrtstrap .button__text--muted
   color rgba(#fff, 0.5)
-
-for size in (x-small 1.3rem 2.5rem) (small 1.4rem 3rem) (medium 1.6rem 3.5rem) (large 1.6rem 5rem) (x-large 1.8rem 6.5rem)
-  .armor-blrrtstrap .button-size-{size}
-    font-size size[1]
-    line-height size[2] - 1rem
-    min-width size[2]
-    padding-bottom .4rem unless (size[2] % 1 == 0)
-    padding-left round(size[2] / 3)
-    padding-right @padding-left
-    padding-top .6rem unless (size[2] % 1 == 0)
