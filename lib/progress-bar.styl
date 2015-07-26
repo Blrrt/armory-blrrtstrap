@@ -1,4 +1,4 @@
-@keyframes loader-progress
+@keyframes progress-bar__cursor
   0%
     transform translateX(-5%)
   70%
@@ -8,7 +8,7 @@
   100%
     transform translateX(100%)
 
-@keyframes loader-progress-head
+@keyframes progress-bar__cursor__head
   0%
     transform scaleX(1)
   70%
@@ -16,29 +16,22 @@
   100%
     transform scalex(1)
 
-.armor-blrrtstrap .loader
+.armor-blrrtstrap .progress-bar
   display block
   height 0.2rem
   padding-bottom 0.1rem
   padding-top 0.2rem
   width 100%
 
-.armor-blrrtstrap .loader-fixed
+.armor-blrrtstrap .progress-bar--fixed
   left 0
   padding-bottom 0
   padding-top 0
-  position absolute
+  position fixed
   right 0
   z-index 1010
 
-.armor-blrrtstrap .loader-progress
-.armor-blrrtstrap .loader-progress::after
-  animation-delay 0.5s
-  animation-duration 3.5s
-  animation-iteration-count infinite
-  animation-timing-function linear
-
-.armor-blrrtstrap .loader-progress
+.armor-blrrtstrap .progress-bar__cursor
   bottom 0
   display block
   left 0
@@ -55,8 +48,14 @@
     top 0
     width 5%
 
-.armor-blrrtstrap .loader.active
-  .loader-progress
-    animation-name loader-progress
-    &:after
-      animation-name loader-progress-head
+.armor-blrrtstrap .progress-bar__cursor
+.armor-blrrtstrap .progress-bar__cursor::after
+  animation-delay 0.5s
+  animation-duration 3.5s
+  animation-iteration-count infinite
+  animation-timing-function linear
+
+.armor-blrrtstrap .progress-bar__cursor--active
+  animation-name progress-bar__cursor
+  &:after
+    animation-name progress-bar__cursor__head
