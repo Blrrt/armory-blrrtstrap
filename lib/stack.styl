@@ -1,9 +1,36 @@
 @import 'clearfix'
 
+@keyframes stack__items--animate-in
+  0%
+    opacity 0
+    transform scale3d(0.3, 0.3, 0.3)
+  50%
+    opacity 1
+
+@keyframes stack__items--animate-out
+  0%
+    opacity 1
+  50%
+    opacity 0
+    transform scale3d(0.3, 0.3, 0.3)
+  100%
+    opacity 0
+
 .armor-blrrtstrap .stack
 .armor-blrrtstrap .stack__items
 .armor-blrrtstrap .stack__items__item
   display block
+
+.armor-blrrtstrap .stack__items--animate-in
+.armor-blrrtstrap .stack__items--animate-out
+  animation-duration 0.4s
+  animation-fill-mode both
+
+.armor-blrrtstrap .stack__items--animate-in
+  animation-name stack__items--animate-in
+
+.armor-blrrtstrap .stack__items--animate-out
+  animation-name stack__items--animate-out
 
 .armor-blrrtstrap .stack__items__item
   clearfix()

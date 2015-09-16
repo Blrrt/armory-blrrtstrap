@@ -4,7 +4,7 @@ body
   height 100%
   overflow-scrolling touch
   -webkit-overflow-scrolling touch
-  overflow-x hidden /* swap with off-canvas in wkwebview */
+  overflow-x hidden
   -webkit-tap-highlight-color rgba(0, 0, 0, 0)
   -webkit-touch-callout none
   user-select none
@@ -16,19 +16,19 @@ body
   font-family sans-serif
   overflow-y auto
 
-  &.cordova--yes.os--name--ios
-    padding-top 2rem
-
-    &::before
-      background-color #eee
-      content ''
-      display block
-      height 2rem
-      left 0
-      position fixed
-      right 0
-      top 0
-      z-index 210
+.armor-blrrtstrap .base--status-bar--ios
+  padding-top 2rem
+  &::before
+    background-color #eee
+    content ''
+    display block
+    height 2rem
+    left 0
+    position fixed
+    right 0
+    top 0
+    transition background-color 0.2s
+    z-index 210
 
 .armor-blrrtstrap .base.cordova--yes
   overflow hidden
@@ -37,8 +37,8 @@ body
   background-attachment fixed
   background-size cover
 
-  &.cordova--yes.os--name--ios::before
-    background-color #222
+.armor-blrrtstrap .base--background.base--status-bar--ios::before
+  background-color #222
 
 .armor-blrrtstrap .base--background--overlay::after
   background-color rgba(#000, 0.8)
@@ -50,5 +50,5 @@ body
   right 0
   top 0
 
-.armor-blrrtstrap .cordova--yes.os--name--ios .base--background--overlay::after
+.armor-blrrtstrap .base--background--overlay.base--status-bar--ios::after
   top 2rem
