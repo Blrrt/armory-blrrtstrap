@@ -4,7 +4,6 @@ body
   height 100%
   overflow-scrolling touch
   -webkit-overflow-scrolling touch
-  overflow-x hidden
   -webkit-tap-highlight-color rgba(0, 0, 0, 0)
   -webkit-touch-callout none
   user-select none
@@ -15,6 +14,7 @@ body
   display flex
   font-family sans-serif
   overflow-y auto
+  transition background-color 0.2s
 
 .armor-blrrtstrap .base--status-bar--ios
   padding-top 2rem
@@ -35,20 +35,11 @@ body
 
 .armor-blrrtstrap .base--background
   background-attachment fixed
-  background-size cover
-
-.armor-blrrtstrap .base--background.base--status-bar--ios::before
   background-color #222
+  background-repeat no-repeat
+  background-size cover
+  &.base--status-bar--ios::before
+    background-color #222
 
-.armor-blrrtstrap .base--background--overlay::after
-  background-color rgba(#000, 0.8)
-  bottom -5rem
-  content ''
-  display block
-  left 0
-  position fixed
-  right 0
-  top 0
-
-.armor-blrrtstrap .base--background--overlay.base--status-bar--ios::after
-  top 2rem
+.armor-blrrtstrap .base--background.base--status-bar--ios
+  background-position 50% 2rem
