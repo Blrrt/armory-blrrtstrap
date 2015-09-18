@@ -1,24 +1,23 @@
-size(n)
-  border-radius n * 0.5rem
+avatar-size(n)
   width n * 1rem
   height n * 1rem
 
 .armor-blrrtstrap .avatar
+  avatar-size 4
+  border-radius 50%
   display inline-block
   overflow hidden
-  size 4
-  transform scale(1)
   transition opacity 0.2s, filter 0.3s
   vertical-align middle
 
-.armor-blrrtstrap .avatar--size--small
-  size 3
+for size in (small 3) (large 5)
+  .armor-blrrtstrap .avatar--size--{size[0]}
+    avatar-size size[1]
 
 .armor-blrrtstrap .avatar__image
   display inline-block
   height 100%
   position relative
-  transform-origin top left
   width 100%
 
 .armor-blrrtstrap .avatar--loading
