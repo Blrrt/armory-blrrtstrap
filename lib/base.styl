@@ -14,15 +14,28 @@ body
   display flex
   font-family sans-serif
   overflow-y auto
-  transition background-color 0.2s
 
 .armor-blrrtstrap .base--status-bar--ios
   padding-top 2rem
+  &::before
+    background-color #eee
+    content ''
+    display block
+    height 2rem
+    left 0
+    position absolute
+    right 0
+    top 0
+    z-index 210
 
 .armor-blrrtstrap .base.cordova--yes
   overflow hidden
 
 .armor-blrrtstrap .base--background
   background-attachment fixed
+  background-color #222
   background-repeat no-repeat
   background-size cover
+
+.armor-blrrtstrap .base--background.base--status-bar--ios::before
+  background-color #222

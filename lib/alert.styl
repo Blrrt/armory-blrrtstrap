@@ -1,26 +1,41 @@
 .armor-blrrtstrap .alert
   background-color rgba(#000, 0.8)
-  display block
+  display flex
   left 0
-  opacity 1
-  overflow hidden
   padding 0.25rem 1rem
   right 0
+  transition opacity 0.2s, transform 0.2s
 
-.armor-blrrtstrap .alert.hide
-  height 0
+.armor-blrrtstrap .alert--hidden.alert--fixed
+  transform translateY(-100%)
+
+.armor-blrrtstrap .alert--hidden:not(.alert--fixed)
   opacity 0
-  padding-bottom 0
-  padding-top 0
 
-.armor-blrrtstrap .alert-link
-.armor-blrrtstrap .alert-text
+.armor-blrrtstrap .alert--fixed
+  position fixed
+  top 0
+  z-index 10
+  &.alert--under--ios-status-bar
+    top 2rem
+  &.alert--under--navbar
+    top 4rem
+  &.alert--under--ios-status-bar.alert--under--navbar
+    top 6rem
+
+.armor-blrrtstrap .alert__text
   color #fff
-  display inline
+  display flex
+  flex 1
   font-size 1.4rem
   line-height 2rem
 
-.armor-blrrtstrap .alert-link
+.armor-blrrtstrap .alert__text--align--right
+  justify-content flex-end
+
+.armor-blrrtstrap .alert__link
   cursor pointer
-  &.disabled
-    color rgba(#fff, 0.5)
+  display inline
+
+.armor-blrrtstrap .alert__link--disabled
+  color #666
