@@ -28,18 +28,12 @@
 .armor-blrrtstrap .button--dropzone--dragover
   background-color rgba(#000, 0.8)
 
-.armor-blrrtstrap .button--size--x-small
-  font-size 1.3rem
-  line-height 1.5rem
-  padding-left 0.5rem
-  padding-right 0.5rem
-
-.armor-blrrtstrap .button--size--large
-  font-size 1.6rem
-  line-height 4rem
-  min-width 5rem
-  padding-left 1.8rem
-  padding-right 1.8rem
+for size in (x-small 1.3rem 1.5rem 0.5rem) (small 1.4rem 2rem 1rem) (large 1.6rem 2.5rem 1.5rem)
+  .armor-blrrtstrap .button--size--{size[0]}
+    font-size size[1]
+    line-height size[2]
+    padding-left size[3]
+    padding-right size[3]
 
 .armor-blrrtstrap .button__text
   display inline
