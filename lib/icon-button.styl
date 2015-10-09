@@ -1,19 +1,26 @@
 .armor-blrrtstrap .icon-button
   color #666
   display inline-block
-  font-size 2.4rem
-  line-height 2.8rem
-  min-width 4rem
+  font-size 1.8rem
+  line-height 2.5rem
+  min-width 3.5rem
   opacity 1
-  padding 0.6rem 0.5rem
+  padding 0.5rem
   position relative
   transition color 0.2s, opacity 0.2s
+  z-index 20
   &:not(:disabled)
     cursor pointer
   &:hover:not(:disabled)
     color #333
   &:disabled
     color #ccc
+
+for size in (small 1.4rem 2rem 3rem) (large 2.4rem 3rem 4rem)
+  .armor-blrrtstrap .icon-button--size--{size[0]}
+    font-size size[1]
+    line-height size[2]
+    min-width size[3] rem
 
 .armor-blrrtstrap .icon-button__badge
   display block

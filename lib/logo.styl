@@ -1,13 +1,22 @@
 .armor-blrrtstrap .logo
   display inline-block
-  filter drop-shadow(0 0.3rem 0.3rem rgba(#000, 0.5))
+  filter blur(0) drop-shadow(0 0.3rem 0.3rem rgba(#000, 0.25))
+  position relative
   transition -webkit-filter 0.2s, filter 0.2s
 
-.armor-blrrtstrap .logo--clickable:hover
+.armor-blrrtstrap .logo--clickable
   cursor pointer
-  filter drop-shadow(0 0.3rem 0.3rem rgba(#000, 1))
 
-.armor-blrrtstrap .logo__image
+.armor-blrrtstrap .logo::before
+  background-size cover
   color transparent
+  content ''
   display inline-block
-  height 100%
+  filter blur(0)
+  height 400%
+  left 0
+  position absolute
+  top 0
+  transform scale(0.25)
+  transform-origin 0 0
+  width 400%

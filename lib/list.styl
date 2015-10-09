@@ -1,30 +1,49 @@
+@keyframes list__items--animate-in
+  0%
+    opacity 0
+    transform scale3d(0.3, 0.3, 0.3)
+  50%
+    opacity 1
+
+@keyframes list__items--animate-out
+  0%
+    opacity 1
+  50%
+    opacity 0
+    transform scale3d(0.3, 0.3, 0.3)
+  100%
+    opacity 0
+
 .armor-blrrtstrap .list
   display flex
   flex-direction column
-  height 100%
   width 100%
 
 .armor-blrrtstrap .list__items
   display block
   position relative
 
-.armor-blrrtstrap .list__items + .list__items
-  margin-top 2rem
-  &::before
-    background-color #ccc
-    content ''
-    display block
-    height 1px
-    left 0
-    position absolute
-    right 0
-    top -1rem
-
 .armor-blrrtstrap .list__items__item
   display block
 
 .armor-blrrtstrap .list__items__item__target
-  color #fff
   display block
-  font-size 1.6rem
-  line-height 2rem
+  padding 1rem
+
+.armor-blrrtstrap .list__items__item--separated
+  box-shadow 0 1px 2px rgba(#000, 0.25)
+
+.armor-blrrtstrap .list__items__item + .list__items__item--separated
+.armor-blrrtstrap .list__items__item--separated + .list__items__item
+  margin-top 1rem
+
+.armor-blrrtstrap .list__items--animate-in
+.armor-blrrtstrap .list__items--animate-out
+  animation-duration 0.4s
+  animation-fill-mode both
+
+.armor-blrrtstrap .list__items--animate-in
+  animation-name list__items--animate-in
+
+.armor-blrrtstrap .list__items--animate-out
+  animation-name list__items--animate-out
