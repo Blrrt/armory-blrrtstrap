@@ -6,26 +6,18 @@
 
 .armor-blrrtstrap .tile__primary
   display flex
+  flex-wrap wrap
   position relative
   width 100%
   z-index 10
 
 .armor-blrrtstrap .tile__primary--clickable
   cursor pointer
-  &:hover .tile__primary__body__content-1
+  &:hover .tile__primary__content__line-1
     color #f30
 
-.armor-blrrtstrap .tile__primary__action
-  bottom 0
-  display block
-  left 0
-  position absolute
-  right 0
-  top 0
-  z-index 10
-
 .armor-blrrtstrap .tile__primary__image
-.armor-blrrtstrap .tile__primary__body
+.armor-blrrtstrap .tile__primary__content
   padding-bottom 1rem
   padding-left 1rem
   padding-top 1rem
@@ -35,7 +27,7 @@
   margin-right -5rem
   width 5rem
 
-.armor-blrrtstrap .tile__primary__body
+.armor-blrrtstrap .tile__primary__content
   display block
   flex-basis 0%
   flex-grow 1
@@ -43,22 +35,29 @@
   padding-left 6rem
   padding-right 1rem
 
-.armor-blrrtstrap .tile__primary__body--has-secondary
+.armor-blrrtstrap .tile__primary__content--has-secondary
   padding-right 6rem
 
-.armor-blrrtstrap .tile__primary__body__content-1
-.armor-blrrtstrap .tile__primary__body__content-2
+.armor-blrrtstrap .tile__primary__content__line-1
+.armor-blrrtstrap .tile__primary__content__line-2
   display block
   line-height 2rem
 
-.armor-blrrtstrap .tile__primary__body__content-1
+.armor-blrrtstrap .tile__primary__content__line-1
   color #333
-  font-size 1.5rem
+  font-size 1.4rem
   transition color 0.2s
 
-.armor-blrrtstrap .tile__primary__body__content-2
+.armor-blrrtstrap .tile__primary__content__line-2
   color #999
   font-size 1.3rem
+
+.armor-blrrtstrap .tile__primary__action
+  display flex
+  padding-bottom 1rem
+  padding-left 0.5rem
+  padding-right 0.5rem
+  width 100%
 
 .armor-blrrtstrap .tile__secondary
   align-items flex-end

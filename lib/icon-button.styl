@@ -8,6 +8,7 @@
   padding 0.5rem
   position relative
   transition color 0.2s, opacity 0.2s
+  text-align center
   z-index 20
   &:not(:disabled)
     cursor pointer
@@ -21,6 +22,9 @@ for size in (small 1.4rem 2rem 3rem) (large 2.4rem 3rem 4rem)
     font-size size[1]
     line-height size[2]
     min-width size[3] rem
+
+.armor-blrrtstrap .icon-button--size--small .fa
+  -webkit-font-smoothing none
 
 .armor-blrrtstrap .icon-button__badge
   display block

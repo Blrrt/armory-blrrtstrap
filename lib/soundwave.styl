@@ -1,48 +1,56 @@
 .armor-blrrtstrap .soundwave
+  align-items center
   display flex
+  width 100%
 
-.armor-blrrtstrap .soundwave-track
+.armor-blrrtstrap .soundwave__track
   appearance none
   background-origin: content-box
   display inline-block
-  flex 1
-  height 1.5rem
-  padding-bottom 0.8rem
-  padding-top 0.5rem
+  flex-basis 0%
+  flex-grow 1
+  flex-shrink 1
+  height 1rem
+  padding-bottom 0.4rem
+  padding-top 0.4rem
 
-.armor-blrrtstrap .soundwave-track::-webkit-progress-bar
+.armor-blrrtstrap .soundwave__track--prepended
+  padding-left 0.5rem
+
+.armor-blrrtstrap .soundwave__track--appended
+  padding-right 0.5rem
+
+.armor-blrrtstrap .soundwave__track::-webkit-progress-bar
   background-color #eee
 
-.armor-blrrtstrap .soundwave-track::-webkit-progress-value
+.armor-blrrtstrap .soundwave__track::-webkit-progress-value
   background-color #666
 
-.armor-blrrtstrap .soundwave-time
+.armor-blrrtstrap .soundwave__time
   color #999
   display inline-block
   font-size 1.2rem
-  line-height 1.5rem
+  line-height 1
+  margin-left 0.5rem
+  margin-right 0.5rem
   position relative
+  text-align center
+  top 0.1em
+  width 4rem
 
-.armor-blrrtstrap .soundwave-time + .soundwave-track
-  margin-left 1rem
-
-.armor-blrrtstrap .soundwave-track + .soundwave-time
-  margin-left 1rem
-
-.armor-blrrtstrap .soundwave-inverted .soundwave-track::-webkit-progress-bar
+.armor-blrrtstrap .soundwave--inverted .soundwave__track::-webkit-progress-bar
   background-color #fff
 
-.armor-blrrtstrap .soundwave-inverted .soundwave-track::-webkit-progress-value
+.armor-blrrtstrap .soundwave--inverted .soundwave__track::-webkit-progress-value
   background-color #c30
 
-.armor-blrrtstrap .soundwave-inverted .soundwave-time
+.armor-blrrtstrap .soundwave--inverted .soundwave__time
   color #fff
 
-.armor-blrrtstrap .soundwave-size-large .soundwave-track
-  height 1rem
+.armor-blrrtstrap .soundwave--size--large .soundwave__track
   padding-bottom 0.3rem
   padding-top 0.3rem
 
-.armor-blrrtstrap .soundwave-size-large .soundwave-time
+.armor-blrrtstrap .soundwave--size--large .soundwave__time
   font-size 1.6rem
   line-height 2rem
