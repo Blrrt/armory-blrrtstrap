@@ -16,7 +16,7 @@
   transition background-color 0.2s, border-color 0.2s, color 0.2s, opacity 0.2s
   z-index 1
   &:hover:not(:disabled):not(.disabled)
-    background-color darken(@background-color, 50%)
+    background-color darken(@background-color, 20%)
   &.disabled
   &:disabled
     cursor default
@@ -50,4 +50,4 @@ for size in (x-small 1.3rem 1.5rem 0.5rem) (small 1.4rem 2rem 1rem) (large 1.6re
 .armor-blrrtstrap .button--state--warning
   background-color #f30
   &:hover:not(:disabled):not(.disabled)
-    background-color darken(@background-color, 50%)
+    background-color darken(@background-color, 20%)
