@@ -1,11 +1,6 @@
 .armor-blrrtstrap .reveal
-  bottom 0
   display block
-  left 0
-  overflow hidden
-  position absolute
-  right 0
-  top 0
+  position relative
 
 .armor-blrrtstrap .reveal__background
   bottom 0
@@ -20,22 +15,40 @@
 .armor-blrrtstrap .reveal__background--open
   pointer-events auto
 
-.armor-blrrtstrap .reveal__content
-  align-items center
-  background-color #222
+.armor-blrrtstrap .reveal__visible
+  display block
+
+.armor-blrrtstrap .reveal__hidden
   bottom 0
   display flex
-  justify-content center
-  padding 1rem
+  left 0
+  overflow hidden
   position absolute
   right 0
   top 0
+
+.armor-blrrtstrap .reveal__hidden__content
+  align-items center
+  background-color #222
+  display flex
+  flex-shrink 0
+  justify-content center
+  padding 1rem
+  position relative
   transition transform 0.2s
+  width 85%
   z-index 30
+  &::after
+    background-color @background-color
+    bottom 0
+    content ''
+    display block
+    left 100%
+    position absolute
+    top 0
+    width 100%;
 
-.armor-blrrtstrap .reveal__content--direction--right
-  left 15%
-  transform translateX(100%)
-
-.armor-blrrtstrap .reveal__content--open
-  transform none
+.armor-blrrtstrap .reveal__hidden__content--direction--right
+  margin-left 100%
+  &.reveal__hidden__content--open
+    transform translateX(-100%)
