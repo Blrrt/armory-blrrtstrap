@@ -1,0 +1,52 @@
+.armor-blrrtstrap .floating-button-container
+  bottom 0
+  display block
+  left 0
+  position fixed
+  right 0
+  z-index 30
+
+.armor-blrrtstrap .floating-button
+  background-color rgba(#000, 0.65)
+  border-color transparent
+  border-style dashed
+  border-width 0.2rem
+  color #fff
+  display flex
+
+.armor-blrrtstrap .floating-button--dropzone--dragging
+.armor-blrrtstrap .floating-button--dropzone--dragover
+  border-color #fff
+
+.armor-blrrtstrap .floating-button--dropzone--dragover
+  background-color rgba(#000, 0.8)
+
+.armor-blrrtstrap .floating-button__button
+  cursor pointer
+  display block
+  font-size 1.6rem
+  line-height 3.5rem
+  padding 0.4rem 1.5rem 0.2rem
+  text-align center
+  transition background-color 0.2s, border-color 0.2s, color 0.2s, opacity 0.2s
+  &:last-child
+    text-align right
+  &:first-child
+    text-align left
+  &:hover
+    background-color rgba(#000, 0.2)
+
+.armor-blrrtstrap .floating-button__button--disabled
+  cursor default
+  opacity 0.6
+  &:hover
+    background-color transparent
+
+.armor-blrrtstrap .floating-button__button--primary
+  flex-grow 1
+
+.armor-blrrtstrap .floating-button__button__text
+  display inline
+
+.armor-blrrtstrap .floating-button__button__text--muted
+  color rgba(#fff, 0.5)
