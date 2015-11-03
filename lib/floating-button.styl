@@ -1,28 +1,5 @@
-@keyframes floating-button-container--animate-in
-  0%
-    transform translateY(100%)
-  100%
-    transform translateY(0)
-
-.armor-blrrtstrap .floating-button-container
-  bottom 0
-  display block
-  left 0
-  position fixed
-  right 0
-  z-index 30
-
-.armor-blrrtstrap .floating-button-container--animate-in
-.armor-blrrtstrap .floating-button-container--animate-out
-  animation-duration 0.4s
-  animation-fill-mode both
-  animation-name floating-button-container--animate-in
-
-.armor-blrrtstrap .floating-button-container--animate-out
-  animation-direction reverse
-
 .armor-blrrtstrap .floating-button
-  background-color rgba(#000, 0.65)
+  background-color rgba(#000, 0.8)
   color #fff
   display flex
   min-height 4.5rem
@@ -42,7 +19,7 @@
     transition border-color 0.2s
 
 .armor-blrrtstrap .floating-button--dropzone--dragover
-  background-color rgba(#000, 0.8)
+  background-color rgba(#000, 0.95)
 
 .armor-blrrtstrap .floating-button--dropzone--dragging::after
 .armor-blrrtstrap .floating-button--dropzone--dragover::after
@@ -63,6 +40,7 @@
   &:hover
     background-color rgba(#000, 0.5)
 
+.armor-blrrtstrap .floating-button__button:disabled
 .armor-blrrtstrap .floating-button__button--disabled
   cursor default
   opacity 0.6
@@ -71,6 +49,10 @@
 
 .armor-blrrtstrap .floating-button__button--primary
   flex-grow 1
+
+.armor-blrrtstrap .floating-button__button__icon
+  position relative
+  right 0.25rem
 
 .armor-blrrtstrap .floating-button__button__text
   display inline

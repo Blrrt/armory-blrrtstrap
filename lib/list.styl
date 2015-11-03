@@ -24,8 +24,32 @@
   display block
 
 .armor-blrrtstrap .list__items__item__target
+  color #fff
   display block
+  font-size 1.6rem
+  line-height 2rem
+  overflow hidden
   padding 1rem
+  text-overflow ellipsis
+  transition background-color 0.2s
+  white-space nowrap
+  width 100%
+
+.armor-blrrtstrap .list__items__item__target--clickable
+  &:not(.list__items__item__target--active)
+    cursor pointer
+
+.armor-blrrtstrap .list__items__item__target--active
+.armor-blrrtstrap .list__items__item__target--clickable:hover
+  background-color #f30
+
+.armor-blrrtstrap .list__items__item__target--disabled
+  opacity 0.5
+
+.armor-blrrtstrap .list__items__item__target--size--small
+  font-size 1.4rem
+  padding-bottom 0.5rem
+  padding-top 0.5rem
 
 .armor-blrrtstrap .list__items__item--separated
   box-shadow 0 1px 2px rgba(#000, 0.25)

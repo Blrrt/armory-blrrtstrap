@@ -1,5 +1,7 @@
 .armor-blrrtstrap .tabs
   display flex
+  padding-left 1rem
+  padding-right 1rem
 
 .armor-blrrtstrap .tabs__tab
   cursor pointer
@@ -28,11 +30,29 @@
     transform translateY(100%)
     transition transform 0.2s
 
+.armor-blrrtstrap .tabs__tab__body--inverted
+  color #ccc
+  &::after
+    background-color #fff
+
+.armor-blrrtstrap .tabs__tab__body--size--small
+  padding-left 1rem
+  padding-right 1rem
+  &::after
+    height 0.25rem
+
+.armor-blrrtstrap .tabs__tab--active
+  cursor default
+
 .armor-blrrtstrap .tabs__tab--active .tabs__tab__body
 .armor-blrrtstrap .tabs__tab:hover .tabs__tab__body
   color #666
   &::after
     transform translateY(0)
+
+.armor-blrrtstrap .tabs__tab--active .tabs__tab__body--inverted
+.armor-blrrtstrap .tabs__tab:hover .tabs__tab__body--inverted
+  color #fff
 
 .armor-blrrtstrap .tabs__tab__body__icon
 .armor-blrrtstrap .tabs__tab__body__text
@@ -45,6 +65,10 @@
 
 .armor-blrrtstrap .tabs__tab__body__text
   font-size 1.8rem
+
+.armor-blrrtstrap .tabs__tab__body__text--size--small
+  font-size 1.6rem
+  line-height 3.5rem
 
 .armor-blrrtstrap .tabs__tab__body__icon + .tabs__tab__body__text
   margin-left 0.5rem

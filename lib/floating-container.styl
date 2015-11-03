@@ -1,0 +1,22 @@
+@keyframes floating-container--animate-in
+  0%
+    transform translateY(100%)
+  100%
+    transform translateY(0)
+
+.armor-blrrtstrap .floating-container
+  bottom 0
+  display block
+  left 0
+  position fixed
+  right 0
+  z-index 30
+
+.armor-blrrtstrap .floating-container--animate-in
+.armor-blrrtstrap .floating-container--animate-out
+  animation-duration 0.4s
+  animation-fill-mode both
+  animation-name floating-container--animate-in
+
+.armor-blrrtstrap .floating-container--animate-out
+  animation-direction reverse

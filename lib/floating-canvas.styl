@@ -1,0 +1,49 @@
+.armor-blrrtstrap .floating-canvas
+  display block
+  pointer-events none
+  position relative
+
+.armor-blrrtstrap .floating-canvas__background
+  position fixed
+
+.armor-blrrtstrap .floating-canvas__background--from--bottom
+  bottom 0
+  height 100vh
+  left 0
+  right 0
+
+.armor-blrrtstrap .floating-canvas__background--show--yes
+  pointer-events auto
+
+.armor-blrrtstrap .floating-canvas__window
+  display block
+  position absolute
+
+.armor-blrrtstrap .floating-canvas__window--show--yes
+  pointer-events auto
+
+.armor-blrrtstrap .floating-canvas__window--from--bottom
+  bottom 100%
+  height 50vh
+  left 0
+  overflow hidden
+  right 0
+
+.armor-blrrtstrap .floating-canvas__window__body
+  display block
+  height 100%
+  transition transform 0.2s
+  width 100%
+
+.armor-blrrtstrap .floating-canvas__window__body--from--bottom
+  background-color rgba(#000, 0.8)
+  padding-bottom 0.5rem
+  padding-top 0.5rem
+  transform translateY(100%)
+
+.armor-blrrtstrap .floating-canvas__window__body--show--yes
+  transform none
+
+.armor-blrrtstrap .floating-canvas__window__body__container
+  padding-left 1rem
+  padding-right 1rem
