@@ -1,14 +1,24 @@
 avatar-size(n)
-  width n * 1rem
+  font-size n * 0.45rem
   height n * 1rem
+  line-height n * 1rem
+  width n * 1rem
 
 .armor-blrrtstrap .avatar
   avatar-size 4
+  background-size cover
   border-radius 50%
+  color #fff
   display inline-block
   overflow hidden
-  transition opacity 0.2s, filter 0.3s
+  transition background-color 0.2s, opacity 0.2s, filter 0.3s
   vertical-align middle
+
+backgrounds = (0 #aaccd6) (1 #f09973) (2 #7f5e59) (3 #a88474) (4 #66827b) (5 #9bc3b8) (6 #bf5659) (7 #de595f) (8 #899b9e) (9 #e28a88) (10 #914a4b) (11 #594b4d) (12 #80735c)
+
+for bg in backgrounds
+  .armor-blrrtstrap .avatar--background--{bg[0]}
+    background-color bg[1]
 
 for size in (small 3) (large 5)
   .armor-blrrtstrap .avatar--size--{size[0]}
@@ -24,5 +34,10 @@ for size in (small 3) (large 5)
   filter grayscale(0) saturate(0)
   opacity 0
 
-.armor-blrrtstrap .avatar__image--default
-  visibility hidden
+.armor-blrrtstrap .avatar__text
+  display inline-block
+  text-align center
+  text-transform lowercase
+  width 100%
+  &::first-letter
+    text-transform uppercase
