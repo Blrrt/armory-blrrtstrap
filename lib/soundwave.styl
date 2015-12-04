@@ -5,26 +5,39 @@
 
 .armor-blrrtstrap .soundwave__track
   appearance none
-  background-origin: content-box
+  background-color #eee
+  background-origin content-box
   display inline-block
   flex-basis 0%
   flex-grow 1
   flex-shrink 1
-  height 1rem
-  padding-bottom 0.4rem
-  padding-top 0.4rem
+  height 0.2rem
+  margin-bottom 0.4rem
+  margin-top 0.4rem
 
 .armor-blrrtstrap .soundwave__track--prepended
-  padding-left 0.5rem
+  margin-left 0.5rem
 
 .armor-blrrtstrap .soundwave__track--appended
-  padding-right 0.5rem
+  margin-right 0.5rem
 
 .armor-blrrtstrap .soundwave__track::-webkit-progress-bar
-  background-color #eee
+  background-color transparent
+
+.armor-blrrtstrap .soundwave__track::-moz-progress-bar
+  background-color #666
 
 .armor-blrrtstrap .soundwave__track::-webkit-progress-value
   background-color #666
+
+.armor-blrrtstrap .soundwave--inverted .soundwave__track
+  background-color #fff
+
+.armor-blrrtstrap .soundwave--inverted .soundwave__track::-moz-progress-bar
+  background-color #c30
+
+.armor-blrrtstrap .soundwave--inverted .soundwave__track::-webkit-progress-value
+  background-color #c30
 
 .armor-blrrtstrap .soundwave__time
   color #999
@@ -38,18 +51,11 @@
   top 0.1em
   width 4rem
 
-.armor-blrrtstrap .soundwave--inverted .soundwave__track::-webkit-progress-bar
-  background-color #fff
-
-.armor-blrrtstrap .soundwave--inverted .soundwave__track::-webkit-progress-value
-  background-color #c30
-
 .armor-blrrtstrap .soundwave--inverted .soundwave__time
   color #fff
 
 .armor-blrrtstrap .soundwave--size--large .soundwave__track
-  padding-bottom 0.3rem
-  padding-top 0.3rem
+  height 0.4rem
 
 .armor-blrrtstrap .soundwave--size--large .soundwave__time
   font-size 1.6rem
