@@ -1,19 +1,53 @@
 .armor-blrrtstrap .checkbox
-  cursor pointer
+  color #999
   display flex
   font-size 1.4rem
-  line-height 2rem
-  width 100%
+  line-height 2.1rem
+
+.armor-blrrtstrap .checkbox__input
+  display none
 
 .armor-blrrtstrap .checkbox__button
-  -moz-appearance checkbox
-  -webkit-appearance checkbox
-  display inline
-  margin-right 1rem
+.armor-blrrtstrap .checkbox__text
+  cursor pointer
+  padding-bottom 0.2rem
+  padding-top 0.2rem
+
+.armor-blrrtstrap .checkbox__button
+  display inline-block
   position relative
-  top 0.3rem
+  top 0.1rem
+  transition color 0.2s
+  width 1.5rem
+
+.armor-blrrtstrap .checkbox__button__checked
+.armor-blrrtstrap .checkbox__button__empty
+  display inline-block
+
+.armor-blrrtstrap .checkbox__button__checked
+  left 0
+  opacity 0
+  position absolute
+  top 0.2rem
 
 .armor-blrrtstrap .checkbox__text
-  display inline
-  color #999
-  flex 1
+  display inline-block
+  flex-basis 0
+  flex-grow 1
+  padding-left 0.5rem
+
+.armor-blrrtstrap .checkbox__input:checked ~ .checkbox__button
+  color #666
+
+.armor-blrrtstrap .checkbox__input:checked ~ .checkbox__button .checkbox__button__empty
+  opacity 0
+
+.armor-blrrtstrap .checkbox__input:checked ~ .checkbox__button .checkbox__button__checked
+  opacity 1
+
+.armor-blrrtstrap .checkbox__input:disabled ~ .checkbox__button
+.armor-blrrtstrap .checkbox__input:disabled ~ .checkbox__text
+  cursor default
+
+.armor-blrrtstrap .checkbox__input:disabled ~ .checkbox__button
+  opacity 0.5

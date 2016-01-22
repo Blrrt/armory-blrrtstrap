@@ -1,19 +1,52 @@
 .armor-blrrtstrap .radio-button
-  cursor pointer
+  color #999
   display flex
   font-size 1.4rem
-  line-height 2rem
-  width 100%
+  line-height 2.1rem
+
+.armor-blrrtstrap .radio-button__input
+  display none
 
 .armor-blrrtstrap .radio-button__button
-  -moz-appearance radio
-  -webkit-appearance radio
-  display inline
-  margin-right 1rem
+.armor-blrrtstrap .radio-button__text
+  cursor pointer
+  padding-bottom 0.2rem
+  padding-top 0.2rem
+
+.armor-blrrtstrap .radio-button__button
+  display inline-block
   position relative
+  transition color 0.2s
+  width 1.5rem
+
+.armor-blrrtstrap .radio-button__button__checked
+.armor-blrrtstrap .radio-button__button__empty
+  display inline-block
+
+.armor-blrrtstrap .radio-button__button__checked
+  left 0
+  opacity 0
+  position absolute
   top 0.2rem
 
 .armor-blrrtstrap .radio-button__text
-  display inline
-  color #999
-  flex 1
+  display inline-block
+  flex-basis 0
+  flex-grow 1
+  padding-left 0.5rem
+
+.armor-blrrtstrap .radio-button__input:checked ~ .radio-button__button
+  color #666
+
+.armor-blrrtstrap .radio-button__input:checked ~ .radio-button__button .radio-button__button__empty
+  opacity 0
+
+.armor-blrrtstrap .radio-button__input:checked ~ .radio-button__button .radio-button__button__checked
+  opacity 1
+
+.armor-blrrtstrap .radio-button__input:disabled ~ .radio-button__button
+.armor-blrrtstrap .radio-button__input:disabled ~ .radio-button__text
+  cursor default
+
+.armor-blrrtstrap .radio-button__input:disabled ~ .radio-button__button
+  opacity 0.5
