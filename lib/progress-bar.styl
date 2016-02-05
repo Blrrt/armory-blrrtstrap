@@ -18,30 +18,91 @@
 
 .armor-blrrtstrap .progress-bar
   display block
-  height 0.3rem
-  padding-bottom 0.1rem
-  padding-top 0.1rem
+  height 0.5rem
+  overflow hidden
   position relative
   width 100%
 
 .armor-blrrtstrap .progress-bar--fixed
   left 0
+  height 0.3rem
   padding-bottom 0
   padding-top 0
   position fixed
   right 0
   z-index 1010
 
+.armor-blrrtstrap .progress-bar--size--large
+  height 1rem
+
+.armor-blrrtstrap .progress-bar--fixed.progress--bar--size--large
+  height 0.4rem
+
 .armor-blrrtstrap .progress-bar__cursor
-  bottom 0
+.armor-blrrtstrap .progress-bar__progress
+  bottom 0.1rem
   display block
   left 0
   position absolute
   right 0
+  top 0.1rem
+
+.armor-blrrtstrap .progress-bar__cursor--size--large
+.armor-blrrtstrap .progress-bar__progress--size--large
+  bottom 0.3rem
+  top 0.3rem
+
+.armor-blrrtstrap .progress-bar__cursor--fixed
+.armor-blrrtstrap .progress-bar__progress--fixed
+  bottom 0
   top 0
+
+.armor-blrrtstrap .progress-bar__progress::-webkit-progress-bar
+  background-color transparent
+
+.armor-blrrtstrap .progress-bar__progress--active.progress-bar__progress--track
+  background-color #eee
+
+.armor-blrrtstrap .progress-bar__progress--active.progress-bar__progress--track::-webkit-progress-bar
+  background-color #eee
+
+.armor-blrrtstrap .progress-bar__progress--active.progress-bar__progress--track.progress-bar__progress--callout
+  background-color #fdc
+
+.armor-blrrtstrap .progress-bar__progress--active.progress-bar__progress--track.progress-bar__progress--callout::-webkit-progress-bar
+  background-color #fdc
+
+.armor-blrrtstrap .progress-bar__progress--active.progress-bar__progress--track.progress-bar__progress--inverted
+  background-color #fff
+
+.armor-blrrtstrap .progress-bar__progress--active.progress-bar__progress--track.progress-bar__progress--inverted::-webkit-progress-bar
+  background-color #fff
+
+.armor-blrrtstrap .progress-bar__progress::-moz-progress-bar
+  background-color #666
+
+.armor-blrrtstrap .progress-bar__progress::-webkit-progress-value
+  background-color #666
+
+.armor-blrrtstrap .progress-bar__progress--callout::-moz-progress-bar
+  background-color #f30
+
+.armor-blrrtstrap .progress-bar__progress--callout::-webkit-progress-value
+  background-color #f30
+
+.armor-blrrtstrap .progress-bar__progress--callout.progress-bar__progress--inverted::-moz-progress-bar
+  background-color #c30
+
+.armor-blrrtstrap .progress-bar__progress--callout.progress-bar__progress--inverted::-webkit-progress-value
+  background-color #c30
+
+.armor-blrrtstrap .progress-bar__progress--reverse
+  transform rotate(180deg)
+
+.armor-blrrtstrap .progress-bar__cursor
   transform translateX(-5%)
   &::after
-    background-color #f30
+    background-color #666
     bottom 0
     content ''
     display block
@@ -49,7 +110,10 @@
     top 0
     width 5%
 
-.armor-blrrtstrap .progress-bar__cursor
+.armor-blrrtstrap .progress-bar__cursor--callout::after
+  background-color #f30
+
+.armor-blrrtstrap .progress-bar__cursor.progress-bar__cursor
 .armor-blrrtstrap .progress-bar__cursor::after
   animation-delay 0.5s
   animation-duration 3.5s
