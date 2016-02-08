@@ -1,3 +1,13 @@
+.armor-blrrtstrap .alert-container
+  display block
+  overflow hidden
+
+.armor-blrrtstrap .alert-container--pinned
+  left 0
+  position absolute
+  right 0
+  z-index 10
+
 .armor-blrrtstrap .alert
   background-color rgba(#000, 0.8)
   display flex
@@ -7,21 +17,8 @@
   transition opacity 0.2s, transform 0.2s
   z-index 20
 
-.armor-blrrtstrap .alert--hidden.alert--fixed
+.armor-blrrtstrap .alert--hide
   transform translateY(-100%)
-
-.armor-blrrtstrap .alert--hidden:not(.alert--fixed)
-  opacity 0
-
-.armor-blrrtstrap .alert--fixed
-  position fixed
-  top 0
-  &.alert--under--ios-status-bar
-    top 2rem
-  &.alert--under--navbar
-    top 4rem
-  &.alert--under--ios-status-bar.alert--under--navbar
-    top 6rem
 
 .armor-blrrtstrap .alert__text
   color #fff
