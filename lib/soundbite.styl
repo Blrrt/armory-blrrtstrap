@@ -15,25 +15,30 @@
   margin-bottom 0.5rem
   margin-right 0.8rem
   vertical-align top
+  @media (min-width: 48em)
+    margin-bottom 0.75rem
 
 .armor-blrrtstrap .soundbites__lines__line--break
   clear left
 
 .armor-blrrtstrap .soundbites__lines__line__text
+.armor-blrrtstrap .soundbites__lines__line__sound
+  transform translateZ(0)
+  transition opacity 0.2s
+
+.armor-blrrtstrap .soundbites__lines__line__text
   color #fff
   display block
-  font-size 3.8rem
-  line-height 4rem
+  font-size 2.2rem
+  line-height 2.5rem
   opacity 0.5
-  transition all 0.2s
-  @media (max-width: 48em)
-    font-size 2.2rem
-    line-height 2.5rem
+  @media (min-width: 48em)
+    font-size 3.8rem
+    line-height 4rem
 
 .armor-blrrtstrap .soundbites__lines__line__sound
   display block
   opacity 0
-  transition all 0.2s
 
 .armor-blrrtstrap .soundbites__lines__line--active
   .soundbites__lines__line__text
