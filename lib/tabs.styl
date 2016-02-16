@@ -2,10 +2,13 @@
   display flex
   padding-left 1rem
   padding-right 1rem
+  width 100%
 
 .armor-blrrtstrap .tabs__tab
   cursor pointer
   display block
+  flex-basis 0
+  flex-grow 1
   position relative
 
 .armor-blrrtstrap .tabs__tab__body
@@ -54,27 +57,32 @@
 .armor-blrrtstrap .tabs__tab:hover .tabs__tab__body--inverted
   color #fff
 
-.armor-blrrtstrap .tabs__tab__body__icon
-.armor-blrrtstrap .tabs__tab__body__text
+.armor-blrrtstrap .tabs__tab__body__content
+  display inline-block
+  position relative
+
+.armor-blrrtstrap .tabs__tab__body__content__icon
+.armor-blrrtstrap .tabs__tab__body__content__text
   display inline-block
   line-height 4rem
   vertical-align middle
 
-.armor-blrrtstrap .tabs__tab__body__icon
+.armor-blrrtstrap .tabs__tab__body__content__icon
   font-size 2.4rem
 
-.armor-blrrtstrap .tabs__tab__body__text
+.armor-blrrtstrap .tabs__tab__body__content__text
   font-size 1.8rem
 
-.armor-blrrtstrap .tabs__tab__body__text--size--small
+.armor-blrrtstrap .tabs__tab__body__content__text--size--small
   font-size 1.6rem
   line-height 3.5rem
 
-.armor-blrrtstrap .tabs__tab__body__icon + .tabs__tab__body__text
+.armor-blrrtstrap .tabs__tab__body__content__icon + .tabs__tab__body__content__text
   margin-left 0.5rem
 
-.armor-blrrtstrap .tabs__tab__badge
+.armor-blrrtstrap .tabs__tab__body__content__badge
   display block
+  margin-right 0.25rem
   position absolute
-  right calc(100% - 1rem)
+  right 100%
   top 0.25rem

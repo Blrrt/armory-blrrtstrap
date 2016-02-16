@@ -4,7 +4,7 @@ body
   height 100%
   overflow-scrolling touch
   -webkit-overflow-scrolling touch
-  -webkit-tap-highlight-color rgba(0, 0, 0, 0)
+  -webkit-tap-highlight-color rgba(#000, 0)
   -webkit-touch-callout none
   user-select none
   width 100%
@@ -13,6 +13,7 @@ body
   background-color #eee
   display flex
   font-family sans-serif
+  -webkit-font-smoothing antialiased
   overflow-y auto
 
 .armor-blrrtstrap .base--status-bar--ios
@@ -30,12 +31,6 @@ body
 
 .armor-blrrtstrap .base.cordova--yes
   overflow hidden
-
-.armor-blrrtstrap .base--background
-  background-attachment fixed
-  background-color #222
-  background-repeat no-repeat
-  background-size cover
 
 .armor-blrrtstrap .base--background.base--status-bar--ios::before
   background-color #222

@@ -26,17 +26,18 @@
   border-color #fff
 
 .armor-blrrtstrap .floating-button__button
+  align-items center
   cursor pointer
-  display block
-  font-size 1.6rem
+  display flex
+  justify-content center
   line-height 3.5rem
+  overflow hidden
   padding 0.6rem 1.5rem 0.4rem
-  text-align center
   transition background-color 0.2s, border-color 0.2s, color 0.2s, opacity 0.2s
   &:last-child
-    text-align right
+    justify-content flex-end
   &:first-child
-    text-align left
+    justify-content flex-start
   &:hover
     background-color rgba(#000, 0.5)
 
@@ -52,11 +53,25 @@
   flex-grow 1
 
 .armor-blrrtstrap .floating-button__button__icon
+  display inline-block
+  font-size 1.8rem
+  line-height 1
   position relative
-  right 0.25rem
+  text-align center
+
+.armor-blrrtstrap .floating-button__button__icon--with-text
+  padding-left 1rem
+  padding-right 1.5rem
+  right 0.5rem
+  width 0
 
 .armor-blrrtstrap .floating-button__button__text
   display inline
+  font-size 1.6rem
+  line-height 1
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
 
 .armor-blrrtstrap .floating-button__button__text--muted
   color rgba(#fff, 0.5)
