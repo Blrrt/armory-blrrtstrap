@@ -38,19 +38,25 @@
 .armor-blrrtstrap .list__items__item__target--clickable
   cursor pointer
 
-.armor-blrrtstrap .list__items__item__target--active
-  background-color #ddd
-
+.armor-blrrtstrap .list__items__item__target--clickable:hover
 .armor-blrrtstrap .list__items__item__target--focused
   background-color #eee
+
+.armor-blrrtstrap .list__items__item__target--active
+  background-color #ddd
 
 .armor-blrrtstrap .list__items__item__target--active.list__items__item__target--focused
   background-color #ccc
 
-.armor-blrrtstrap .list__items__item__target--inverted.list__items__item__target--active
-.armor-blrrtstrap .list__items__item__target--inverted.list__items__item__target--focused
 .armor-blrrtstrap .list__items__item__target--inverted.list__items__item__target--clickable:hover
+.armor-blrrtstrap .list__items__item__target--inverted.list__items__item__target--focused
+  background-color rgba(#fff, 0.1)
+
+.armor-blrrtstrap .list__items__item__target--inverted.list__items__item__target--active
   background-color #f30
+
+.armor-blrrtstrap .list__items__item__target--inverted.list__items__item__target--active.list__items__item__target--focused
+  background-color darken(#f30, 15)
 
 .armor-blrrtstrap .list__items__item__target:disabled
 .armor-blrrtstrap .list__items__item__target--disabled
