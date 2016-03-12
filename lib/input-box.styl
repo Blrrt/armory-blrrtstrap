@@ -1,16 +1,87 @@
 .armor-blrrtstrap .input-box
   background-color #fff
-  border .1rem solid #e5e5e5
-  display block
-  padding .9rem
+  cursor text
+  display flex
+  flex-wrap wrap
+  padding-bottom 0.5rem
+  padding-left 0.1rem
+  padding-right 0.1rem
   position relative
   z-index 10
 
-.armor-blrrtstrap .input-box--status--error
-  border-color #f1cbc4
+.armor-blrrtstrap .input-box::after
+  border-color lighten(#ccc, 10)
+  border-style solid
+  border-width 0.1rem
+  bottom 0
+  content ''
+  display block
+  left 0
+  pointer-events none
+  position absolute
+  right 0
+  top 0
+  transition border-color 0.2s
 
-.armor-blrrtstrap .input-box--status--success
-  border-color #c4e5ce
+.armor-blrrtstrap .input-box--focused::after
+  border-color #ccc
+
+.armor-blrrtstrap .input-box--padded
+  padding 1rem
+
+.armor-blrrtstrap .input-box__tag
+  display inline-block
+  margin-left 0.4rem
+  margin-top 0.5rem
+
+.armor-blrrtstrap .input-box__text
+  cursor text
+  display inline-block
+  font-size 1.4rem
+  line-height 2.1rem
+  margin-bottom 0.1rem
+  margin-left 1rem
+  margin-right 1rem
+  margin-top 0.8rem
+  overflow hidden
+  position relative
+  transition color 0.2s
+
+.armor-blrrtstrap .input-box__text__value
+  display inline-block
+  color #666
+
+.armor-blrrtstrap .input-box__text__value::placeholder
+.armor-blrrtstrap .input-box__text__match
+  color #999
+
+.armor-blrrtstrap .input-box__text__value:active
+.armor-blrrtstrap .input-box__text__value:focus
+  color #333
+
+.armor-blrrtstrap .input-box__text__match
+  display block
+  margin-top -2.1rem
+  pointer-events none
+  white-space nowrap
+
+.armor-blrrtstrap .input-box__text__match__entered
+.armor-blrrtstrap .input-box__text__match__suggested
+  display inline-block
+
+.armor-blrrtstrap .input-box__text__match__entered
+  visibility hidden
+
+.armor-blrrtstrap .input-box__spinner
+  bottom 0.7rem
+  display inline-block
+  opacity 0
+  position absolute
+  right 0.7rem
+  transition opacity 0.2s
+
+.armor-blrrtstrap .input-box__spinner--show
+  opacity 1
 
 .armor-blrrtstrap .input-box__label
   color darken(#ccc, 15)

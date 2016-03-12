@@ -36,14 +36,25 @@
   width 100%
 
 .armor-blrrtstrap .list__items__item__target--clickable
-  &:not(.list__items__item__target--active)
-    cursor pointer
+  cursor pointer
 
 .armor-blrrtstrap .list__items__item__target--active
-.armor-blrrtstrap .list__items__item__target--clickable:hover
+  background-color #ddd
+
+.armor-blrrtstrap .list__items__item__target--focused
+  background-color #eee
+
+.armor-blrrtstrap .list__items__item__target--active.list__items__item__target--focused
+  background-color #ccc
+
+.armor-blrrtstrap .list__items__item__target--inverted.list__items__item__target--active
+.armor-blrrtstrap .list__items__item__target--inverted.list__items__item__target--focused
+.armor-blrrtstrap .list__items__item__target--inverted.list__items__item__target--clickable:hover
   background-color #f30
 
+.armor-blrrtstrap .list__items__item__target:disabled
 .armor-blrrtstrap .list__items__item__target--disabled
+  cursor default
   opacity 0.5
 
 .armor-blrrtstrap .list__items__item__target--size--small

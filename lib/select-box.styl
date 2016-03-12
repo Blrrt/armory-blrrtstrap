@@ -1,0 +1,46 @@
+.select-box
+  display block
+  position relative
+  z-index 10
+
+.select-box__input-box
+  display block
+
+.select-box__input-box--opened
+  box-shadow 0 0.1rem 0.2rem rgba(#000, 0.25)
+
+.select-box__list
+  background-color #fff
+  border-color #ccc
+  border-left-style solid
+  border-bottom-style solid
+  border-right-style solid
+  border-width 0.1rem
+  display block
+  height 0
+  max-height 20rem
+  opacity 0
+  overflow-x hidden
+  overflow-y auto
+  -webkit-overflow-scrolling touch
+  pointer-events none
+  will-change height, opacity
+
+.select-box__list__body
+  display block
+  margin-bottom -0.1rem
+  margin-left -0.1rem
+  margin-right -0.1rem
+
+.select-box__list--overlay
+  height auto
+  left 0
+  position absolute
+  right 0
+  will-change opacity
+
+.select-box__list--opened
+  box-shadow 0 1px 2px rgba(#000, 0.25)
+  height auto
+  opacity 1
+  pointer-events auto

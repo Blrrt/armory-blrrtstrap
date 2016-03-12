@@ -3,134 +3,28 @@
   border-color lighten(#ccc, 10)
   border-style solid
   border-width 1px
-  display inline-block
-  transition all 0.2s
-  width 100%
-  &.select-focus
-  &.armor-blrrtstrap-select-focus
-    border-color #ccc
-    color #333
-
-.armor-blrrtstrap .select-textbox
-  cursor default
-  display block
-  position relative
-  &::after
-    color #999
-    content '\f0d7'
-    font-family FontAwesome
-    font-size 1.5rem
-    line-height 3.5rem
-    pointer-events none
-    position absolute
-    right 1rem
-    top 0
-
-.armor-blrrtstrap .select-editable .select-textbox
-  cursor text
-
-.armor-blrrtstrap .select-selected .select-textbox::after
-  color #666
-
-.armor-blrrtstrap .select-textbox-items
-  display flex
-
-.armor-blrrtstrap .select-textbox-item
-  display block
-
-.armor-blrrtstrap .select-textbox-item-input
-  flex 1
-
-.armor-blrrtstrap .select-textbox-input
-  color #666
-  display block
-  font-size 1.4rem
-  height 3.3rem
-  line-height 2.1rem
-  padding 0.7rem 1rem 0.5rem
-  width 100%
-  &::-webkit-input-placeholder
-    color #999
-  &:-moz-placeholder
-  &::-moz-placeholder
-    color #999
-  &:-ms-input-placeholder
-    color #999
-  &::input-placeholder
-    color #999
-  &:active
-  &:focus
-    border-color #ccc
-    color #333
-
-.armor-blrrtstrap .select-single.select-blur.select-selected .select-textbox-input
-  opacity 0
-  margin-top -3.3rem
-
-.armor-blrrtstrap .select-textbox-selection
-  color #666
-  display block
-  font-size 1.4rem
-  line-height 2.1rem
-  padding 0.7rem 1rem 0.5rem
-
-.armor-blrrtstrap .select-single.select-focus .select-textbox-selection
-  display none
-
-.armor-blrrtstrap .select-dropdown
-  display block
-  position relative
-
-.armor-blrrtstrap .select-closed .select-dropdown
-  display none
-
-.armor-blrrtstrap .select-dropdown-items
-  background-color #fff
-  border-color lighten(#ccc, 10)
-  border-style solid
-  border-top-color #fff
-  border-width 1px
-  display block
-  left -1px
-  position absolute
-  right -1px
-  top -1px
-  transition all 0.2s
-  z-index 10
-
-.armor-blrrtstrap .select-focus .select-dropdown-items
-  border-color #ccc
-  border-top-color #fff
-
-.armor-blrrtstrap .select-dropdown-item
-  display block
-  position relative
-  &::after
-    background-color #ccc
-    bottom 0.5rem
-    content ''
-    display none
-    left 0
-    position absolute
-    top 0.5rem
-    width 0.25rem
-  &:hover::after
-  &.hover::after
-    display block
-
-.armor-blrrtstrap .select-dropdown-placeholder
-  background-color #fff
   color #999
-  cursor pointer
-  display block
+  display inline-block
   font-size 1.4rem
-  line-height 2rem
+  line-height 2.1rem
   padding 0.7rem 1rem 0.5rem
+  position relative
+  width 100%
 
-.armor-blrrtstrap .select-dropdown-option
+.armor-blrrtstrap .select--active
   color #666
-  cursor pointer
+
+.armor-blrrtstrap .select__caret
+  font-size 1.5rem
+  line-height 3.5rem
+  pointer-events none
+  position absolute
+  right 1rem
+  top 0
+
+.armor-blrrtstrap .select__items
   display block
-  font-size 1.4rem
-  line-height 2rem
-  padding 0.5rem 1rem 0.5rem
+  width 100%
+
+.armor-blrrtstrap .select-items option
+  display block
