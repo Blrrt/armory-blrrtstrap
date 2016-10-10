@@ -1,3 +1,18 @@
+
+@keyframes badge-animate-in
+  0%
+    transform scale(1)
+  50%
+    transform scale(2)
+  100%
+    transform scale(1)
+
+@keyframes badge-animate-out
+  from
+    transform scale(1)
+  to
+    transform scale(0)
+
 .armor-blrrtstrap .badge
   background-color #f00
   border-radius 1rem
@@ -6,6 +21,7 @@
   min-width 2rem
   padding-left 0.6rem
   padding-right 0.6rem
+  will-change transform
 
 .armor-blrrtstrap .badge__text
   color #fff
@@ -16,26 +32,12 @@
   text-align center
   width 100%
 
-@keyframes badge--animate-in
-  0%
-    transform scale(1)
-  50%
-    transform scale(2)
-  100%
-    transform scale(1)
-
-@keyframes badge--animate-out
-  from
-    transform scale(1)
-  to
-    transform scale(0)
-
-.armor-blrrtstrap .badge--animate-in
+.armor-blrrtstrap .badge--animate--in
   animation-duration 0.4s
   animation-fill-mode both
-  animation-name badge--animate-in
+  animation-name badge-animate-in
 
-.armor-blrrtstrap .badge--animate-out
+.armor-blrrtstrap .badge--animate--out
   animation-duration 0.4s
   animation-fill-mode both
-  animation-name badge--animate-out
+  animation-name badge-animate-out

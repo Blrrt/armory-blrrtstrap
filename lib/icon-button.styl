@@ -1,27 +1,33 @@
 .armor-blrrtstrap .icon-button
+  align-items center
   color #666
-  display inline-block
+  display inline-flex
+  fill #666
   font-size 1.8rem
-  line-height 2.5rem
+  height 3.5rem
+  justify-content center
+  line-height 0
   min-width 3.5rem
   opacity 1
   padding 0.5rem
   position relative
-  transition color 0.2s, opacity 0.2s
+  transition color 0.2s, fill 0.2s, opacity 0.2s
   text-align center
   z-index 20
   &:not(:disabled)
     cursor pointer
   &:hover:not(:disabled)
     color #333
+    fill #333
   &:disabled
     color #ccc
+    fill #ccc
 
-for size in (small 1.4rem 2rem 3rem) (large 2.4rem 3rem 4rem)
+for size in (small 1.4rem 3rem) (large 2.4rem 4rem)
   .armor-blrrtstrap .icon-button--size--{size[0]}
     font-size size[1]
-    line-height size[2]
-    min-width size[3] rem
+    height size[2]
+    min-width size[2] rem
 
 .armor-blrrtstrap .icon-button--size--small .fa
   -webkit-font-smoothing none
@@ -32,6 +38,17 @@ for size in (small 1.4rem 2rem 3rem) (large 2.4rem 3rem 4rem)
   line-height 0
   position absolute
   top 0.25rem
+
+.armor-blrrtstrap .icon-button__icon
+  display inline-block
+  fill inherit
+  height 2rem
+  line-height 2rem
+
+for size in (small 1.4rem) (large 2.6rem)
+  .armor-blrrtstrap .icon-button__icon--size--{size[0]}
+    height size[1]
+    line-height size[1]
 
 .armor-blrrtstrap .icon-button--animate-in
   opacity 1
