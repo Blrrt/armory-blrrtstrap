@@ -14,18 +14,46 @@
 .armor-blrrtstrap .tile__primary--clickable
   cursor pointer
   &:hover .tile__primary__content__line-1
+    color #f86
+  &:hover .tile__primary__content__line-1__value__keyword
     color #f30
 
 .armor-blrrtstrap .tile__primary__image
 .armor-blrrtstrap .tile__primary__content
+  overflow hidden
   padding-bottom 1rem
   padding-left 1rem
   padding-top 1rem
 
 .armor-blrrtstrap .tile__primary__image
   display block
+  font-size 0
   margin-right -5rem
+  position relative
   width 5rem
+
+.armor-blrrtstrap .tile__primary__image__placeholder
+.armor-blrrtstrap .tile__primary__image__value
+  display block
+  transition-duration 0.2s
+  transition-property opacity
+  transition-timing-function cubic-bezier(0.4, 0, 0.2, 1)
+
+.armor-blrrtstrap .tile__primary__image__placeholder
+  background-color #fff
+  left 1rem
+  pointer-events none
+  position absolute
+  right 0
+  top 1rem
+
+.armor-blrrtstrap .tile__primary__image__placeholder--show--false
+.armor-blrrtstrap .tile__primary__image__value--show--false
+  opacity 0
+
+.armor-blrrtstrap .tile__primary__image__placeholder--show--true
+.armor-blrrtstrap .tile__primary__image__value--show--true
+  opacity 1
 
 .armor-blrrtstrap .tile__primary__content
   display block
@@ -38,13 +66,57 @@
 
 .armor-blrrtstrap .tile__primary__content__line-1
 .armor-blrrtstrap .tile__primary__content__line-2
+  color #999
   display block
   line-height 2rem
+  min-height 2rem
+  position relative
 
 .armor-blrrtstrap .tile__primary__content__line-1
-  color #333
   font-size 1.4rem
-  transition color 0.2s
+
+.armor-blrrtstrap .tile__primary__content__line-1__placeholder
+.armor-blrrtstrap .tile__primary__content__line-1__value
+.armor-blrrtstrap .tile__primary__content__line-2__placeholder
+.armor-blrrtstrap .tile__primary__content__line-2__value
+  display block
+  transition-duration 0.2s
+  transition-property opacity
+  transition-timing-function cubic-bezier(0.4, 0, 0.2, 1)
+
+.armor-blrrtstrap .tile__primary__content__line-1__placeholder
+.armor-blrrtstrap .tile__primary__content__line-2__placeholder
+  background-color #fff
+  left 0
+  pointer-events none
+  position absolute
+  right 0
+  top 0
+
+.armor-blrrtstrap .tile__primary__content__line-1__placeholder--show--false
+.armor-blrrtstrap .tile__primary__content__line-1__value--show--false
+.armor-blrrtstrap .tile__primary__content__line-2__placeholder--show--false
+.armor-blrrtstrap .tile__primary__content__line-2__value--show--false
+  opacity 0
+
+.armor-blrrtstrap .tile__primary__content__line-1__placeholder--show--true
+.armor-blrrtstrap .tile__primary__content__line-1__value--show--true
+.armor-blrrtstrap .tile__primary__content__line-2__placeholder--show--true
+.armor-blrrtstrap .tile__primary__content__line-2__value--show--true
+  opacity 1
+
+.armor-blrrtstrap .tile__primary__content__line-1__value__keyword
+  color #333
+  display inline
+  transition-duration 0.2s
+  transition-property color, opacity
+  transition-timing-function cubic-bezier(0.4, 0, 0.2, 1)
+
+.armor-blrrtstrap .tile__primary__content__line-1__value--clamped
+.armor-blrrtstrap .tile__primary__content__line-2__value--clamped
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
 
 .armor-blrrtstrap .tile__primary__content__line-2
   color #999
