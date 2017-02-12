@@ -15,6 +15,24 @@
   background-attachment fixed
   background-repeat no-repeat
   background-size cover
+  transition-duration 0.2s
+  transition-property opacity
+  transition-timing-function cubic-bezier(0.4, 0, 0.2, 1)
+
+.armor-blrrtstrap .background__image--show--false
+  opacity 0
+
+.armor-blrrtstrap .background__image--show--true
+  opacity 1
+
+.armor-blrrtstrap .background__overlay
+  background-color rgba(#000, 0.8);
+  transition-duration 0.2s
+  transition-property opacity
+  transition-timing-function cubic-bezier(0.4, 0, 0.2, 1)
+
+.armor-blrrtstrap .background__overlay--show--false
+  opacity 0
 
 .armor-blrrtstrap .background__overlay--show--true
-  background-color rgba(#000, 0.8);
+  opacity 1
