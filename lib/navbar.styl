@@ -38,16 +38,30 @@
   align-self center
   flex-basis (8/12 * 100%)
   justify-content center
+  width (8/12 * 100%)
 
 .armor-blrrtstrap .navbar__section--align--right
   justify-content flex-end
 
 .armor-blrrtstrap .navbar__title
-  color #999
+  color #ccc
   display block
   font-size 1.8rem
   line-height 4rem
   overflow hidden
   text-overflow ellipsis
   text-rendering optimizeLegibility
+  transition-duration 0.2s
+  transition-property opacity
+  transition-timing-function cubic-bezier(0.4, 0, 0.2, 1)
   white-space nowrap
+
+.armor-blrrtstrap .navbar__title--show--false
+  opacity 0
+
+.armor-blrrtstrap .navbar__title--show--true
+  opacity 1
+
+.armor-blrrtstrap .navbar__title__text__keyword
+  color #999
+  display inline
